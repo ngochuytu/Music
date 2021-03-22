@@ -7,7 +7,8 @@ const app = {
             source: "../assets/songs/ChoDenBaoGio.mp3",
             duration: "02:28",
             thumbnail_desktop: "../assets/thumbnails/desktop/ChoDenBaoGio_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Chờ đợi có đáng sợ",
@@ -15,7 +16,8 @@ const app = {
             source: "../assets/songs/ChoDoiCoDangSo.mp3",
             duration: "04:46",
             thumbnail_desktop: "../assets/thumbnails/desktop/ChoDoiCoDangSo_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDoiCoDangSo_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDoiCoDangSo_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Chuyện mưa",
@@ -23,7 +25,8 @@ const app = {
             source: "../assets/songs/ChuyenMua.mp3",
             duration: "04:19",
             thumbnail_desktop: "../assets/thumbnails/desktop/ChuyenMua_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChuyenMua_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/ChuyenMua_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Đủ xa tình sẽ cũ",
@@ -31,7 +34,8 @@ const app = {
             source: "../assets/songs/DuXaTinhSeCu.mp3",
             duration: "04:08",
             thumbnail_desktop: "../assets/thumbnails/desktop/DuXaTinhSeCu_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/DuXaTinhSeCu_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/DuXaTinhSeCu_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Em ổn không",
@@ -39,7 +43,8 @@ const app = {
             source: "../assets/songs/EmOnKhong.mp3",
             duration: "05:19",
             thumbnail_desktop: "../assets/thumbnails/desktop/EmOnKhong_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/EmOnKhong_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/EmOnKhong_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Mãi mãi sẽ hết vào ngày mai",
@@ -47,7 +52,8 @@ const app = {
             source: "../assets/songs/MaiMaiSeHetVaoNgayMai.mp3",
             duration: "04:53",
             thumbnail_desktop: "../assets/thumbnails/desktop/MaiMaiSeHetVaoNgayMai_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/MaiMaiSeHetVaoNgayMai_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/MaiMaiSeHetVaoNgayMai_Mobile.jpg",
+            updated: "14/03/2021"
         },
         {
             name: "Mưa trên cuộc tình",
@@ -55,7 +61,8 @@ const app = {
             source: "../assets/songs/MuaTrenCuocTinh.mp3",
             duration: "05:42",
             thumbnail_desktop: "../assets/thumbnails/desktop/MuaTrenCuocTinh_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/MuaTrenCuocTinh_Mobile.jpg"
+            thumbnail_mobile: "../assets/thumbnails/mobile/MuaTrenCuocTinh_Mobile.jpg",
+            updated: "14/03/2021"
         }
     ],
 
@@ -107,137 +114,199 @@ const app = {
     repeat: false,
     random: false,
 
-    goToNextSong: function () {
-        this.setCurrentSongIndex(true, false, this.repeat, this.random);
-        this.start();
-    },
-
-    goToPreviousSong: function () {
-        this.setCurrentSongIndex(false, true, this.repeat, this.random);
-        this.start();
-    },
-
-    goToRandomSong: function () {
-        this.setCurrentSongIndex(false, false, this.repeat, this.random);
-        this.start();
-    },
-
-    playAndStopSong: function (audioHandler) {
+    playAndStopSong: function () {
+        const audioHandler = document.getElementById("audioHandler");
         if (this.playing)
             audioHandler.play();
         else
             audioHandler.pause();
     },
 
+    goToNextSong: function () {
+        this.setCurrentSongIndex(true, false, false, false);
+        this.start();
+    },
+
+    goToPreviousSong: function () {
+        this.setCurrentSongIndex(false, true, false, false);
+        this.start();
+    },
+
+    goToRandomSong: function () {
+        this.setCurrentSongIndex(false, false, false, this.random);
+        this.start();
+    },
+
     start: function () {
-        const playlistHeader = `
-            <div class="playlist-header-sticky">
-                <div class="playlist-header__thumbnail">
-                    <picture>
-                        <source media="(max-width:700px)" srcset=${this.getCurrentSong().thumbnail_mobile}>
-                        <img src=${this.getCurrentSong().thumbnail_desktop} alt="">
-                    </picture>
-                </div>
-                <h3 class="playlist-header__name">${this.getCurrentSong().name}</h3>
-                <p class="playlist-header__updated-time">Cập nhật 14/03/2021</p>
-            </div>
-        `
+        const components = {
+            header: `
+                <header class="sticky">
+                    <div class="search-wrapper">
+                        <input type="text" placeholder="Nhập tên bài hát">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </header>
+            `,
 
-        const playlist = this.songs.map(song => {
-            if (song === this.getCurrentSong()) {
-                return `
-                    <div class="playlist__song playing">
-                        <div class="song--left">
-                            <div class="song-image">
-                                <img src=${song.thumbnail_desktop} alt="">
-                            </div>
-                            <div class="song-information">
-                                <p class="song-name">${song.name}</p>
-                                <p class="singer-name">${song.singer}</p>
-                            </div>
-                        </div>
-                        <div class="song--middle">
-                            <p class="song-duration">${song.duration}</p>
-                        </div>
-                        <div class="song--right">
-                            <i class="fas fa-ellipsis-h moreButton"></i>
-                            <div class="song-more hidden">
-                                <div class="more more-download">
-                                    <a href=${song.source} download>
-                                        <i class="fas fa-download">Tải xuống</i>
-                                    </a>
+            playlistHeader: `
+                <div class="playlist-header-sticky">
+                    <div class="playlist-header__thumbnail">
+                        <picture>
+                            <source media="(max-width:700px)" srcset=${this.getCurrentSong().thumbnail_mobile}>
+                            <img src=${this.getCurrentSong().thumbnail_desktop} alt="">
+                        </picture>
+                    </div>
+                    <h3 class="playlist-header__name">${this.getCurrentSong().name}</h3>
+                    <p class="playlist-header__updated-time">Cập nhật ${this.getCurrentSong().updated}</p>
+                </div>
+            `,
+
+            playlist: () => {
+                const playlist = this.songs.map(song => {
+                    if (song === this.getCurrentSong()) {
+                        return `
+                            <div class="playlist__song playing">
+                                <div class="song--left">
+                                    <div class="song-image">
+                                        <img src=${song.thumbnail_desktop} alt="">
+                                    </div>
+                                    <div class="song-information">
+                                        <p class="song-name">${song.name}</p>
+                                        <p class="singer-name">${song.singer}</p>
+                                    </div>
+                                </div>
+                                <div class="song--middle">
+                                    <p class="song-duration">${song.duration}</p>
+                                </div>
+                                <div class="song--right">
+                                    <i class="fas fa-ellipsis-h moreButton"></i>
+                                    <div class="song-more hidden">
+                                        <div class="more more-download">
+                                            <a href=${song.source} download>
+                                                <i class="fas fa-download">Tải xuống</i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                `
-            } else {
-                return `
-                    <div class="playlist__song">
-                        <div class="song--left">
-                            <div class="song-image">
-                                <img src=${song.thumbnail_desktop} alt="">
-                            </div>
-                            <div class="song-information">
-                                <p class="song-name">${song.name}</p>
-                                <p class="singer-name">${song.singer}</p>
-                            </div>
-                        </div>
-                        <div class="song--middle">
-                            <p class="song-duration">${song.duration}</p>
-                        </div>
-                        <div class="song--right">
-                            <i class="fas fa-ellipsis-h moreButton"></i>
-                            <div class="song-more hidden">
-                                <div class="more more-download">
-                                    <a href=${song.source} download>
-                                        <i class="fas fa-download">Tải xuống</i>
-                                    </a>
+                        `
+                    } else {
+                        return `
+                            <div class="playlist__song">
+                                <div class="song--left">
+                                    <div class="song-image">
+                                        <img src=${song.thumbnail_desktop} alt="">
+                                    </div>
+                                    <div class="song-information">
+                                        <p class="song-name">${song.name}</p>
+                                        <p class="singer-name">${song.singer}</p>
+                                    </div>
+                                </div>
+                                <div class="song--middle">
+                                    <p class="song-duration">${song.duration}</p>
+                                </div>
+                                <div class="song--right">
+                                    <i class="fas fa-ellipsis-h moreButton"></i>
+                                    <div class="song-more hidden">
+                                        <div class="more more-download">
+                                            <a href=${song.source} download>
+                                                <i class="fas fa-download">Tải xuống</i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        `
+                    }
+                });
+
+                return playlist.join("");
+            },
+
+            player: `
+                <footer class="player" id="player">
+                    <div class="player--left">
+                        <div class="song-image">
+                            <img src=${this.getCurrentSong().thumbnail_mobile} alt="">
+                        </div>
+                        <div class="player__song-information">
+                            <p class="song-name">${this.getCurrentSong().name}</p>
+                            <p class="song-singer-name">${this.getCurrentSong().singer}</p>
                         </div>
                     </div>
-                `
-            }
-        });
-
-        const player = `
-            <div class="player--left">
-                <div class="song-image">
-                    <img src=${this.getCurrentSong().thumbnail_mobile} alt="">
-                </div>
-                <div class="player__song-information">
-                    <p class="song-name">${this.getCurrentSong().name}</p>
-                    <p class="song-singer-name">${this.getCurrentSong().singer}</p>
-                </div>
-            </div>
-            <div class="player--middle">
-                <div class="player-control--top">
-                    <i class="fas fa-redo-alt" id="repeatButton"></i>
-                    <i class="fas fa-step-backward" id="previousButton"></i>                        
-                    <i class="fas fa-play show" id="playButton"></i>
-                    <i class="fas fa-pause hidden" id="pauseButton"></i>
-                    <i class="fas fa-step-forward" id="nextButton"></i>
-                    <i class="fas fa-random" id="randomButton"></i>
-                </div>
-                <div class="player-control--bottom">
-                    <span id="current-time">00:00</span>
-                    <input type="range" value="0" min="0" step="1" max=${this.convertSongDurationToSeconds(this.getCurrentSong().duration)} id="audio-slider">
-                    <span>${this.getCurrentSong().duration}</span>
-                    <audio src=${this.getCurrentSong().source} id="audioHandler"></audio>
-                </div>
-            </div>
-            <div class="player--right">
-                <i class="fas fa-volume-up"></i>
-                <input type="range">
-            </div>
-        `;
+                    <div class="player--middle">
+                        <div class="player-control--top">
+                            <i class="fas fa-redo-alt" id="repeatButton"></i>
+                            <i class="fas fa-step-backward" id="previousButton"></i>                        
+                            <i class="fas fa-play show" id="playButton"></i>
+                            <i class="fas fa-pause hidden" id="pauseButton"></i>
+                            <i class="fas fa-step-forward" id="nextButton"></i>
+                            <i class="fas fa-random" id="randomButton"></i>
+                        </div>
+                        <div class="player-control--bottom">
+                            <span id="current-time">00:00</span>
+                            <input type="range" value="0" min="0" step="1" max=${this.convertSongDurationToSeconds(this.getCurrentSong().duration)} id="audio-slider">
+                            <span>${this.getCurrentSong().duration}</span>
+                            <audio src=${this.getCurrentSong().source} id="audioHandler"></audio>
+                        </div>
+                    </div>
+                    <div class="player--right">
+                        <i class="fas fa-volume-up"></i>
+                        <input type="range">
+                    </div>
+                </footer>
+            `
+        }
 
         const render = () => {
-            document.getElementById("playlist").innerHTML = playlist.join("");
-            document.getElementById("playlist-header").innerHTML = playlistHeader;
-            document.getElementById("player").innerHTML = player;
+            document.body.innerHTML = `
+                ${components.header}
+                <section class="main">
+                    <div class="playlist-header" id="playlist-header">${components.playlistHeader}</div>
+                    <div class="playlist" id="playlist">${components.playlist()}</div>
+                </section>
+                ${components.player}
+            `;
         };
+
+        const stylingHandler = () => {
+            const stylingRepeatAndRandomButton = () => {
+                const repeatButton = document.getElementById("repeatButton");
+                const randomButton = document.getElementById("randomButton");
+                if (this.repeat)
+                    repeatButton.classList.add("active");
+                else
+                    repeatButton.classList.remove("active");
+
+                if (this.random)
+                    randomButton.classList.add("active");
+                else
+                    randomButton.classList.remove("active");
+            }
+
+            const togglingPlayButton = () => {
+                const playButton = document.getElementById("playButton");
+                const pauseButton = document.getElementById("pauseButton");
+                if (this.playing) {
+                    //Ẩn nút play
+                    playButton.classList.remove("show");
+                    playButton.classList.add("hidden");
+                    //Hiện nút pause
+                    pauseButton.classList.add("show");
+                    pauseButton.classList.remove("hidden");
+                } else {
+                    //Hiện nút play
+                    playButton.classList.add("show");
+                    playButton.classList.remove("hidden");
+                    //Ẩn nút pause
+                    pauseButton.classList.remove("show");
+                    pauseButton.classList.add("hidden");
+                }
+            }
+
+            stylingRepeatAndRandomButton();
+            togglingPlayButton();
+        }
 
         const eventHandler = () => {
             const openMoreMenu = () => {
@@ -273,116 +342,112 @@ const app = {
                 });
             };
 
-            const nextButtonClick = () => {
-                const nextButton = document.getElementById("nextButton");
-                nextButton.addEventListener("click", () => {
-                    this.goToNextSong();
-                });
-            };
+            const playerButtonsClick = () => {
+                const nextAndPreviousButtonClick = () => {
+                    const nextButtonClick = () => {
+                        const nextButton = document.getElementById("nextButton");
+                        nextButton.addEventListener("click", () => {
+                            this.goToNextSong();
+                            this.playAndStopSong();
+                        });
+                    };
 
-            const previousButtonClick = () => {
-                const previousButton = document.getElementById("previousButton");
-                previousButton.addEventListener("click", () => {
-                    this.goToPreviousSong();
-                });
-            };
+                    const previousButtonClick = () => {
+                        const previousButton = document.getElementById("previousButton");
+                        previousButton.addEventListener("click", () => {
+                            this.goToPreviousSong();
+                            this.playAndStopSong();
+                        });
+                    };
 
-            const repeatButtonClick = () => {
-                const repeatButton = document.getElementById("repeatButton");
-                repeatButton.addEventListener("click", () => {
-                    //Tắt random
-                    if (this.random)
-                        this.random = false;
-                    //Toggle repeat    
-                    if (this.repeat)
-                        this.repeat = false;
-                    else
-                        this.repeat = true;
-                });
-            }
-            const randomButtonClick = () => {
-                const randomButton = document.getElementById("randomButton");
-                randomButton.addEventListener("click", () => {
-                    //Tắt repeat
-                    if (this.repeat)
-                        this.repeat = false;
-
-                    //Toggle random
-                    if (this.random)
-                        this.random = false;
-                    else
-                        this.random = true;
-                });
-            }
-
-            const togglingPlayButton = () => {
-                const playButton = document.getElementById("playButton");
-                const pauseButton = document.getElementById("pauseButton");
-                if (this.playing) {
-                    //Ẩn nút play
-                    playButton.classList.remove("show");
-                    playButton.classList.add("hidden");
-                    //Hiện nút pause
-                    pauseButton.classList.add("show");
-                    pauseButton.classList.remove("hidden");
-                } else {
-                    //Hiện nút play
-                    playButton.classList.add("show");
-                    playButton.classList.remove("hidden");
-                    //Ẩn nút pause
-                    pauseButton.classList.remove("show");
-                    pauseButton.classList.add("hidden");
-                }
-            }
-
-            const playAndPauseButtonClick = () => {
-                const playButton = document.getElementById("playButton");
-                const pauseButton = document.getElementById("pauseButton");
-                const audioHandler = document.getElementById("audioHandler");
-
-                const playButtonClick = () => {
-                    playButton.addEventListener("click", () => {
-                        this.playing = true;
-                        togglingPlayButton();
-                        this.playAndStopSong(audioHandler);
-                    });
+                    nextButtonClick();
+                    previousButtonClick();
                 }
 
-                const pauseButtonClick = () => {
-                    pauseButton.addEventListener("click", () => {
-                        this.playing = false;
-                        togglingPlayButton();
-                        this.playAndStopSong(audioHandler);
-                    });
+                const repeatAndRandomButtonClick = () => {
+                    const repeatButtonClick = () => {
+                        const repeatButton = document.getElementById("repeatButton");
+                        repeatButton.addEventListener("click", () => {
+                            //Tắt random
+                            if (this.random)
+                                this.random = false;
+                            //Toggle repeat    
+                            if (this.repeat)
+                                this.repeat = false;
+                            else
+                                this.repeat = true;
+
+                            stylingHandler();
+                        });
+                    }
+                    const randomButtonClick = () => {
+                        const randomButton = document.getElementById("randomButton");
+                        randomButton.addEventListener("click", () => {
+                            //Tắt repeat
+                            if (this.repeat)
+                                this.repeat = false;
+
+                            //Toggle random
+                            if (this.random)
+                                this.random = false;
+                            else
+                                this.random = true;
+
+                            stylingHandler();
+                        });
+                    }
+
+                    repeatButtonClick();
+                    randomButtonClick();
                 }
 
-                playButtonClick();
-                pauseButtonClick();
+                const playAndPauseButtonClick = () => {
+                    const playButton = document.getElementById("playButton");
+                    const pauseButton = document.getElementById("pauseButton");
+
+                    const playButtonClick = () => {
+                        playButton.addEventListener("click", () => {
+                            this.playing = true;
+                            stylingHandler();
+                            this.playAndStopSong();
+                        });
+                    }
+
+                    const pauseButtonClick = () => {
+                        pauseButton.addEventListener("click", () => {
+                            this.playing = false;
+                            stylingHandler();
+                            this.playAndStopSong();
+                        });
+                    }
+
+                    playButtonClick();
+                    pauseButtonClick();
+                }
+
+                nextAndPreviousButtonClick();
+                repeatAndRandomButtonClick();
+                playAndPauseButtonClick();
             }
 
             const songEnd = () => {
                 audioHandler.addEventListener("ended", () => {
-                    //Lặp
+                    //Repeat
                     if (this.repeat) {
-                        const audioHandler = document.getElementById("audioHandler");
-                        togglingPlayButton();
-                        this.playAndStopSong(audioHandler);
+                        stylingHandler();
+                        this.playAndStopSong();
                     }
                     //Random
                     else if (this.random) {
-                        console.log("random");
                         this.goToRandomSong();
-                        const audioHandler = document.getElementById("audioHandler");
-                        togglingPlayButton();
-                        this.playAndStopSong(audioHandler);
+                        stylingHandler();
+                        this.playAndStopSong();
                     }
                     //Bình thường
                     else {
                         this.goToNextSong();
-                        //Get next song
-                        const audioHandler = document.getElementById("audioHandler");
-                        togglingPlayButton();
-                        this.playAndStopSong(audioHandler);
+                        stylingHandler();
+                        this.playAndStopSong();
                     }
                 });
             }
@@ -405,21 +470,16 @@ const app = {
                 })
             }
 
-
             openMoreMenu();
-            nextButtonClick();
-            previousButtonClick();
-            repeatButtonClick();
-            randomButtonClick();
-            playAndPauseButtonClick();
+            playerButtonsClick();
             songEnd();
             updateAudioSliderAndCurrentTime();
         };
 
         render();
+        stylingHandler();
         eventHandler();
     }
 }
-
 
 app.start();

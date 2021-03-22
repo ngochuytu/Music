@@ -224,7 +224,7 @@ const app = {
             },
 
             player: `
-                <footer class="player" id="player">
+                <footer class="player">
                     <div class="player--left">
                         <div class="song-image">
                             <img src=${this.getCurrentSong().thumbnail_mobile} alt="">
@@ -262,8 +262,8 @@ const app = {
             document.body.innerHTML = `
                 ${components.header}
                 <section class="main">
-                    <div class="playlist-header" id="playlist-header">${components.playlistHeader}</div>
-                    <div class="playlist" id="playlist">${components.playlist()}</div>
+                    <div class="playlist-header">${components.playlistHeader}</div>
+                    <div class="playlist">${components.playlist()}</div>
                 </section>
                 ${components.player}
             `;

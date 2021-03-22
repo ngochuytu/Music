@@ -1,0 +1,39 @@
+header.sticky{
+    position: sticky;
+    top: 0;
+    background: $layout-bg;
+    z-index: 999;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    .search-wrapper{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 70%;
+        max-width: 450px;
+
+        input{
+            width: 100%;
+            height: 35px;
+            border-radius: 999px;
+            outline: none;
+            border: none;
+            background: $light-bg;
+            padding: 0 20px 0 35px;
+            
+            &, &::placeholder{
+                color: $search-text;
+            }
+        }
+
+        .fa-search{
+            position: absolute;
+            left: 10px;
+        }
+    }
+}

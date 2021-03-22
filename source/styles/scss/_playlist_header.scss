@@ -1,0 +1,37 @@
+.playlist-header{
+    text-align: center;
+    flex: 0 1 30%;
+    margin-right: 20px;
+
+    @media screen and (max-width: $br-medium) {
+        flex: initial;
+        margin: 0 0 20px 0;
+    }
+
+    &-sticky{
+        position: sticky;
+        top: 75px; //Header height
+    }
+
+    &__thumbnail{
+        img{
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 0 auto;
+
+            @media screen and(max-width: $br-medium) {
+                max-width: 65%;
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__thumbnail, &__name{
+        margin-bottom: 10px;
+    }
+
+    &__updated-time{
+        font-size: .8rem;
+        color: $text-secondary;
+    }
+}

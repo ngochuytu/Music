@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    padding: 0 30px; 
+    margin-bottom: 64px; //Player height
+
+    @media screen and (max-width: $br-medium) {
+        flex-direction: column;
+    }
+}

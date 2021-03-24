@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Chờ đến bao giờ",
+        "singer": "Bệt Band",
+        "source": "../assets/songs/ChoDenBaoGio.mp3",
+        "duration": "02:28",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/ChoDenBaoGio_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Chờ đợi có đáng sợ",
+        "singer": "Andiez",
+        "source": "../assets/songs/ChoDoiCoDangSo.mp3",
+        "duration": "04:46",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/ChoDoiCoDangSo_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/ChoDoiCoDangSo_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Chuyện mưa",
+        "singer": "Trung Quân",
+        "source": "../assets/songs/ChuyenMua.mp3",
+        "duration": "04:19",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/ChuyenMua_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/ChuyenMua_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Đủ xa tình sẽ cũ",
+        "singer": "JSOL",
+        "source": "../assets/songs/DuXaTinhSeCu.mp3",
+        "duration": "04:08",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/DuXaTinhSeCu_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/DuXaTinhSeCu_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Em ổn không",
+        "singer": "Trịnh Thiên Ân",
+        "source": "../assets/songs/EmOnKhong.mp3",
+        "duration": "05:19",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/EmOnKhong_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/EmOnKhong_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Mãi mãi sẽ hết vào ngày mai",
+        "singer": "Andiez",
+        "source": "../assets/songs/MaiMaiSeHetVaoNgayMai.mp3",
+        "duration": "04:53",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/MaiMaiSeHetVaoNgayMai_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/MaiMaiSeHetVaoNgayMai_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Mưa trên cuộc tình",
+        "singer": "Edward Duong Nguyen",
+        "source": "../assets/songs/MuaTrenCuocTinh.mp3",
+        "duration": "05:42",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/MuaTrenCuocTinh_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/MuaTrenCuocTinh_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Thu Vội",
+        "singer": "Valenine",
+        "source": "../assets/songs/ThuVoi.mp3",
+        "duration": "04:22",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/ThuVoi_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/ThuVoi_Mobile.jpg",
+        "updated": "24/03/2021"
+    },
+    {
+        "name": "Giá như em nhìn lại",
+        "singer": "JSOL",
+        "source": "../assets/songs/GiaNhuEmNhinLai.mp3",
+        "duration": "05:27",
+        "thumbnail_desktop": "../assets/thumbnails/desktop/GiaNhuEmNhinLai_Desktop.jpg",
+        "thumbnail_mobile": "../assets/thumbnails/mobile/GiaNhuEmNhinLai_Mobile.jpg",
+        "updated": "24/03/2021"
+    }
+]

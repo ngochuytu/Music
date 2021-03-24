@@ -167,6 +167,20 @@ header .search-wrapper .fa-search {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 5px;
   padding: 10px;
+  cursor: pointer;
+}
+
+.playlist__song.playing, .playlist__song:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.playlist__song.playing .song--left .song-image img, .playlist__song:hover .song--left .song-image img {
+  opacity: .6;
+}
+
+.playlist__song.playing .song--left .song-image i, .playlist__song:hover .song--left .song-image i {
+  display: initial;
+  color: #fff;
 }
 
 .playlist__song .song--left,
@@ -205,12 +219,22 @@ header .search-wrapper .fa-search {
 
 .playlist__song .song--left .song-image {
   margin-right: 10px;
+  position: relative;
 }
 
 .playlist__song .song--left .song-image img {
   width: 50px;
   height: 40px;
   border-radius: 5px;
+}
+
+.playlist__song .song--left .song-image i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
 }
 
 .playlist__song .song--left .song-information .song-name {
@@ -304,10 +328,6 @@ header .search-wrapper .fa-search {
   margin-right: 5px;
 }
 
-.playlist__song.playing {
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .player {
   background: #120c1c;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -344,6 +364,14 @@ header .search-wrapper .fa-search {
           align-items: center;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 850px) {
+  .player--left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 35%;
+            flex: 0 1 35%;
+  }
 }
 
 @media screen and (max-width: 600px) {

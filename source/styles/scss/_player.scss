@@ -20,6 +20,10 @@
         overflow: hidden;
         white-space: nowrap;
 
+        @media screen and (max-width: $br-medium-big){
+            flex: 0 1 35%;
+        }
+
         @media screen and (max-width: $br-medium) {
             all: initial;
             display: none;
@@ -40,7 +44,6 @@
             font-size: .85rem;
         }
     }
-
 
     &--middle{
         display: flex;
@@ -156,6 +159,4 @@
             margin-right: 10px;
         }
     }
-
-    
 }

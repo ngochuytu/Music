@@ -7,6 +7,22 @@
         border-bottom: 1px solid $playlist-border;
         border-radius: 5px;
         padding: 10px;
+        cursor: pointer;
+
+        &.playing, &:hover{
+            background: $light-bg;
+
+            .song--left .song-image{
+                img{
+                    opacity: .6;
+                }
+
+                i{
+                    display: initial;
+                    color: #fff;
+                }
+            }
+        }
 
         .song--left,
         .song--middle,
@@ -29,11 +45,20 @@
 
             .song-image{
                 margin-right: 10px;
+                position: relative;
 
                 img{
                     width: 50px;
                     height: 40px;
                     border-radius: 5px;
+                }
+
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    display: none;
                 }
             }
 
@@ -111,9 +136,5 @@
                 }
             }
         }
-    }
-
-    &__song.playing{
-        background: $light-bg;
     }
 }

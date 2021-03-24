@@ -1,72 +1,12 @@
 const app = {
     //audio.duration không return đc giá trị ngay sau khi mới new Audio
-    songs: [
-        {
-            name: "Chờ đến bao giờ",
-            singer: "Bệt Band",
-            source: "../assets/songs/ChoDenBaoGio.mp3",
-            duration: "02:28",
-            thumbnail_desktop: "../assets/thumbnails/desktop/ChoDenBaoGio_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Chờ đợi có đáng sợ",
-            singer: "Andiez",
-            source: "../assets/songs/ChoDoiCoDangSo.mp3",
-            duration: "04:46",
-            thumbnail_desktop: "../assets/thumbnails/desktop/ChoDoiCoDangSo_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChoDoiCoDangSo_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Chuyện mưa",
-            singer: "Trung Quân",
-            source: "../assets/songs/ChuyenMua.mp3",
-            duration: "04:19",
-            thumbnail_desktop: "../assets/thumbnails/desktop/ChuyenMua_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/ChuyenMua_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Đủ xa tình sẽ cũ",
-            singer: "JSOL",
-            source: "../assets/songs/DuXaTinhSeCu.mp3",
-            duration: "04:08",
-            thumbnail_desktop: "../assets/thumbnails/desktop/DuXaTinhSeCu_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/DuXaTinhSeCu_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Em ổn không",
-            singer: "Trịnh Thiên Ân",
-            source: "../assets/songs/EmOnKhong.mp3",
-            duration: "05:19",
-            thumbnail_desktop: "../assets/thumbnails/desktop/EmOnKhong_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/EmOnKhong_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Mãi mãi sẽ hết vào ngày mai",
-            singer: "Andiez",
-            source: "../assets/songs/MaiMaiSeHetVaoNgayMai.mp3",
-            duration: "04:53",
-            thumbnail_desktop: "../assets/thumbnails/desktop/MaiMaiSeHetVaoNgayMai_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/MaiMaiSeHetVaoNgayMai_Mobile.jpg",
-            updated: "14/03/2021"
-        },
-        {
-            name: "Mưa trên cuộc tình",
-            singer: "Edward Duong Nguyen",
-            source: "../assets/songs/MuaTrenCuocTinh.mp3",
-            duration: "05:42",
-            thumbnail_desktop: "../assets/thumbnails/desktop/MuaTrenCuocTinh_Desktop.jpg",
-            thumbnail_mobile: "../assets/thumbnails/mobile/MuaTrenCuocTinh_Mobile.jpg",
-            updated: "14/03/2021"
-        }
-    ],
+    songs: [],
 
     currentSongIndex: 0,
+    playing: false,
+    repeat: false,
+    random: false,
+    volume: 1,
 
     setCurrentSongIndex: function (increment, decrement, repeat, random) {
         if (repeat) {
@@ -109,10 +49,6 @@ const app = {
         const seconds = parseInt(songDurationToArray[1]);
         return minutes * 60 + seconds;
     },
-
-    playing: false,
-    repeat: false,
-    random: false,
 
     playAndStopSong: function () {
         const audioHandler = document.getElementById("audioHandler");
@@ -169,6 +105,7 @@ const app = {
                                 <div class="song--left">
                                     <div class="song-image">
                                         <img src=${song.thumbnail_desktop} alt="">
+                                        <i class="fas fa-play show"></i>
                                     </div>
                                     <div class="song-information">
                                         <p class="song-name">${song.name}</p>
@@ -196,6 +133,7 @@ const app = {
                                 <div class="song--left">
                                     <div class="song-image">
                                         <img src=${song.thumbnail_desktop} alt="">
+                                        <i class="fas fa-play show"></i>
                                     </div>
                                     <div class="song-information">
                                         <p class="song-name">${song.name}</p>
@@ -245,14 +183,14 @@ const app = {
                         </div>
                         <div class="player-control--bottom">
                             <span id="current-time">00:00</span>
-                            <input type="range" value="0" min="0" step="1" max=${this.convertSongDurationToSeconds(this.getCurrentSong().duration)} id="audio-slider">
+                            <input type="range" value="0" min="0" step="1" max=${this.convertSongDurationToSeconds(this.getCurrentSong().duration)} id="audioSlider">
                             <span>${this.getCurrentSong().duration}</span>
                             <audio src=${this.getCurrentSong().source} id="audioHandler"></audio>
                         </div>
                     </div>
                     <div class="player--right">
                         <i class="fas fa-volume-up"></i>
-                        <input type="range">
+                        <input type="range" value="1" min="0" max="1" step="0.01" id="volumeSlider">
                     </div>
                 </footer>
             `
@@ -454,7 +392,7 @@ const app = {
 
             //Update thanh trượt + thời gian bài hát
             const updateAudioSliderAndCurrentTime = () => {
-                const audioSlider = document.getElementById("audio-slider");
+                const audioSlider = document.getElementById("audioSlider");
                 const displayCurrentTime = document.getElementById("current-time");
                 audioHandler.addEventListener("timeupdate", () => {
                     const audioCurrentTime = parseInt(audioHandler.currentTime);
@@ -470,10 +408,32 @@ const app = {
                 })
             }
 
+            const setAndUpdateAudioVolume = () => {
+                const volumeSlider = document.getElementById("volumeSlider");
+                const audioHandler = document.getElementById("audioHandler");
+
+                const setAudioVolume = () => {
+                    audioHandler.volume = this.volume;
+                    volumeSlider.value = this.volume;
+                }
+
+                const updateAudioVolume = () => {
+                    volumeSlider.addEventListener("input", () => {
+                        this.volume = volumeSlider.value; //audio.volume [0,1]
+                        console.log(this.volume);
+                        setAudioVolume();
+                    });
+                }
+                console.log(this.volume);
+                setAudioVolume();
+                updateAudioVolume();
+            }
+
             openMoreMenu();
             playerButtonsClick();
             songEnd();
             updateAudioSliderAndCurrentTime();
+            setAndUpdateAudioVolume();
         };
 
         render();

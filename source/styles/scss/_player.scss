@@ -138,6 +138,15 @@
             display: flex;
             align-items: center;
 
+            span{
+                color: $search-text;
+            }
+
+            .current-time{
+                min-width: 50px;
+                text-align: right;
+            }
+
             input[type="range"]{
                 margin: 0 10px;
             }

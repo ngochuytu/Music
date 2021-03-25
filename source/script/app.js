@@ -1,41 +1,54 @@
-const app = {
-    //audio.duration không return đc giá trị ngay sau khi mới new Audio
-    songs: [],
 
+const app = {
+    songs: null,
     currentSongIndex: 0,
     playing: false,
     repeat: false,
     random: false,
     volume: 1,
 
-    setCurrentSongIndex: function (increment, decrement, repeat, random) {
-        if (repeat) {
+    getSongs: function () {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "../data/songs.json", false);
+        xhr.addEventListener("load", () => {
+            if (xhr.status === 200) {
+                this.songs = JSON.parse(xhr.responseText);
+                console.log("data received");
+            }
+
+        });
+        xhr.send();
+    },
+
+    setCurrentSongIndex: function (next, previous, repeat, random, selectedIndex) {
+        if (repeat)
             //Do nothing
-        }
-        else if (random) {
-            while (true) {
-                let newSongIndex = Math.round(Math.random() * this.songs.length - 1);
-                if (this.currentSongIndex == newSongIndex)
-                    continue;
-                else {
-                    this.currentSongIndex = newSongIndex;
-                    break;
+            if (random) {
+                while (true) {
+                    let newSongIndex = Math.round(Math.random() * this.songs.length - 1);
+                    if (this.currentSongIndex == newSongIndex)
+                        continue;
+                    else {
+                        this.currentSongIndex = newSongIndex;
+                        break;
+                    }
                 }
             }
-        }
-        else if (increment) {
+        if (next) {
             if (this.currentSongIndex >= this.songs.length - 1)
                 this.currentSongIndex = 0;
             else
                 this.currentSongIndex++;
         }
-        else if (decrement) {
+        if (previous) {
             if (this.currentSongIndex == 0)
                 this.currentSongIndex = this.songs.length - 1;
             else {
                 this.currentSongIndex--;
             }
         }
+        if (selectedIndex)
+            this.currentSongIndex = selectedIndex;
     },
 
     getCurrentSong: function () {
@@ -61,20 +74,30 @@ const app = {
     goToNextSong: function () {
         this.setCurrentSongIndex(true, false, false, false);
         this.start();
+        this.playAndStopSong();
     },
 
     goToPreviousSong: function () {
         this.setCurrentSongIndex(false, true, false, false);
         this.start();
+        this.playAndStopSong();
     },
 
     goToRandomSong: function () {
         this.setCurrentSongIndex(false, false, false, this.random);
         this.start();
+        this.playAndStopSong();
+    },
+
+    goToSelectedSong: function (selectedIndex) {
+        this.setCurrentSongIndex(false, false, false, false, selectedIndex);
+        this.start();
+        this.playAndStopSong();
     },
 
     start: function () {
-        const components = {
+        this.getSongs();
+        const sections = {
             header: `
                 <header class="sticky">
                     <div class="search-wrapper">
@@ -182,7 +205,7 @@ const app = {
                             <i class="fas fa-random" id="randomButton"></i>
                         </div>
                         <div class="player-control--bottom">
-                            <span id="current-time">00:00</span>
+                            <span id="current-time" class="current-time">00:00</span>
                             <input type="range" value="0" min="0" step="1" max=${this.convertSongDurationToSeconds(this.getCurrentSong().duration)} id="audioSlider">
                             <span>${this.getCurrentSong().duration}</span>
                             <audio src=${this.getCurrentSong().source} id="audioHandler"></audio>
@@ -198,12 +221,12 @@ const app = {
 
         const render = () => {
             document.body.innerHTML = `
-                ${components.header}
+                ${sections.header}
                 <section class="main">
-                    <div class="playlist-header">${components.playlistHeader}</div>
-                    <div class="playlist">${components.playlist()}</div>
+                    <div class="playlist-header">${sections.playlistHeader}</div>
+                    <div class="playlist">${sections.playlist()}</div>
                 </section>
-                ${components.player}
+                ${sections.player}
             `;
         };
 
@@ -286,7 +309,6 @@ const app = {
                         const nextButton = document.getElementById("nextButton");
                         nextButton.addEventListener("click", () => {
                             this.goToNextSong();
-                            this.playAndStopSong();
                         });
                     };
 
@@ -294,7 +316,6 @@ const app = {
                         const previousButton = document.getElementById("previousButton");
                         previousButton.addEventListener("click", () => {
                             this.goToPreviousSong();
-                            this.playAndStopSong();
                         });
                     };
 
@@ -346,16 +367,16 @@ const app = {
                     const playButtonClick = () => {
                         playButton.addEventListener("click", () => {
                             this.playing = true;
-                            stylingHandler();
                             this.playAndStopSong();
+                            stylingHandler();
                         });
                     }
 
                     const pauseButtonClick = () => {
                         pauseButton.addEventListener("click", () => {
                             this.playing = false;
-                            stylingHandler();
                             this.playAndStopSong();
+                            stylingHandler();
                         });
                     }
 
@@ -373,19 +394,16 @@ const app = {
                     //Repeat
                     if (this.repeat) {
                         stylingHandler();
-                        this.playAndStopSong();
                     }
                     //Random
                     else if (this.random) {
                         this.goToRandomSong();
                         stylingHandler();
-                        this.playAndStopSong();
                     }
                     //Bình thường
                     else {
                         this.goToNextSong();
                         stylingHandler();
-                        this.playAndStopSong();
                     }
                 });
             }
@@ -429,11 +447,21 @@ const app = {
                 updateAudioVolume();
             }
 
+            const songClick = () => {
+                const songsList = document.querySelectorAll(".playlist__song");
+                songsList.forEach((song, selectedIndex) => {
+                    song.addEventListener("click", () => {
+                        this.goToSelectedSong(selectedIndex);
+                    });
+                });
+            }
+
             openMoreMenu();
             playerButtonsClick();
             songEnd();
             updateAudioSliderAndCurrentTime();
             setAndUpdateAudioVolume();
+            songClick();
         };
 
         render();

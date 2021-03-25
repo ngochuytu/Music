@@ -499,6 +499,15 @@ header .search-wrapper .fa-search {
           align-items: center;
 }
 
+.player--middle .player-control--bottom span {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.player--middle .player-control--bottom .current-time {
+  min-width: 50px;
+  text-align: right;
+}
+
 .player--middle .player-control--bottom input[type="range"] {
   margin: 0 10px;
 }

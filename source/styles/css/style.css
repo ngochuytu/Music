@@ -391,7 +391,7 @@ header .search-wrapper .fa-search {
   border-radius: 50%;
 }
 
-.player--left .song-singer-name {
+.player--left .singer-name {
   color: rgba(255, 255, 255, 0.5);
   font-size: .85rem;
 }
@@ -536,5 +536,39 @@ header .search-wrapper .fa-search {
 
 .player--right i {
   margin-right: 10px;
+}
+
+.player .player--left .song-image .song-cd.spinning {
+  -webkit-animation: spin 10s infinite linear;
+          animation: spin 10s infinite linear;
+}
+
+@media screen and (max-width: 600px) {
+  .playlist-header .playlist-header__thumbnail .song-cd.spinning {
+    -webkit-animation: spin 10s infinite linear;
+            animation: spin 10s infinite linear;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -111,8 +111,8 @@ const app = {
                 <div class="playlist-header-sticky">
                     <div class="playlist-header__thumbnail">
                         <picture>
-                            <source media="(max-width:700px)" srcset=${this.getCurrentSong().thumbnail_mobile}>
-                            <img src=${this.getCurrentSong().thumbnail_desktop} alt="">
+                            <source media="(max-width:600px)" srcset=${this.getCurrentSong().thumbnail_mobile}>
+                            <img src=${this.getCurrentSong().thumbnail_desktop} class="song-cd" alt="">
                         </picture>
                     </div>
                     <h3 class="playlist-header__name">${this.getCurrentSong().name}</h3>
@@ -188,11 +188,11 @@ const app = {
                 <footer class="player">
                     <div class="player--left">
                         <div class="song-image">
-                            <img src=${this.getCurrentSong().thumbnail_mobile} alt="">
+                            <img src=${this.getCurrentSong().thumbnail_mobile} class="song-cd" alt="">
                         </div>
                         <div class="player__song-information">
                             <p class="song-name">${this.getCurrentSong().name}</p>
-                            <p class="song-singer-name">${this.getCurrentSong().singer}</p>
+                            <p class="singer-name">${this.getCurrentSong().singer}</p>
                         </div>
                     </div>
                     <div class="player--middle">
@@ -265,8 +265,19 @@ const app = {
                 }
             }
 
+            const animatingSongCDs = () => {
+                const songCDs = document.querySelectorAll(".song-cd");
+                songCDs.forEach(songCD => {
+                    if (this.playing)
+                        songCD.classList.add("spinning");
+                    else
+                        songCD.classList.remove("spinning");
+                });
+            }
+
             stylingRepeatAndRandomButton();
             togglingPlayButton();
+            animatingSongCDs();
         }
 
         const eventHandler = () => {
@@ -393,6 +404,7 @@ const app = {
                 audioHandler.addEventListener("ended", () => {
                     //Repeat
                     if (this.repeat) {
+                        this.playAndStopSong();
                         stylingHandler();
                     }
                     //Random
@@ -450,7 +462,8 @@ const app = {
             const songClick = () => {
                 const songsList = document.querySelectorAll(".playlist__song");
                 songsList.forEach((song, selectedIndex) => {
-                    song.addEventListener("click", () => {
+                    song.addEventListener("click", (e) => {
+                        console.log(e.target.classList.contains("moreButton"));
                         this.goToSelectedSong(selectedIndex);
                     });
                 });

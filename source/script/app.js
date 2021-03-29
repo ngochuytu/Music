@@ -463,9 +463,18 @@ const app = {
                 const songsList = document.querySelectorAll(".playlist__song");
                 songsList.forEach((song, selectedIndex) => {
                     song.addEventListener("click", (e) => {
-                        console.log(e.target.classList.contains("moreButton"));
-                        this.goToSelectedSong(selectedIndex);
+                        //Nếu click vào button more hoặc sub menu
+                        if (!e.target.classList.contains("moreButton") || !e.target.classList.contains("song-more")) { }
+                        else this.goToSelectedSong(selectedIndex);
                     });
+                });
+            }
+
+            const setSongCurrentTime = () => {
+                const audioSlider = document.getElementById("audioSlider");
+                const audioHandler = document.getElementById("audioHandler");
+                audioSlider.addEventListener("input", () => {
+                    audioHandler.currentTime = audioSlider.value;
                 });
             }
 
@@ -475,6 +484,7 @@ const app = {
             updateAudioSliderAndCurrentTime();
             setAndUpdateAudioVolume();
             songClick();
+            setSongCurrentTime();
         };
 
         render();

@@ -464,7 +464,7 @@ const app = {
                 songsList.forEach((song, selectedIndex) => {
                     song.addEventListener("click", (e) => {
                         //Nếu click vào button more hoặc sub menu
-                        if (!e.target.classList.contains("moreButton") || !e.target.classList.contains("song-more")) { }
+                        if (e.target.classList.contains("moreButton") || e.target.classList.contains("song-more")) { }
                         else this.goToSelectedSong(selectedIndex);
                     });
                 });

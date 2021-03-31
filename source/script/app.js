@@ -8,33 +8,34 @@ const app = {
     volume: 1,
 
     setCurrentSongIndex: function (next, previous, repeat, random, selectedIndex) {
-        if (repeat)
+        if (repeat) {
             //Do nothing
-            if (random) {
-                while (true) {
-                    let newSongIndex = Math.round(Math.random() * this.songs.length - 1);
-                    if (this.currentSongIndex == newSongIndex)
-                        continue;
-                    else {
-                        this.currentSongIndex = newSongIndex;
-                        break;
-                    }
+        }
+        else if (random) {
+            while (true) {
+                let newSongIndex = Math.round(Math.random() * this.songs.length - 1);
+                if (this.currentSongIndex == newSongIndex)
+                    continue;
+                else {
+                    this.currentSongIndex = newSongIndex;
+                    break;
                 }
             }
-        if (next) {
+        }
+        else if (next) {
             if (this.currentSongIndex >= this.songs.length - 1)
                 this.currentSongIndex = 0;
             else
                 this.currentSongIndex++;
         }
-        if (previous) {
+        else if (previous) {
             if (this.currentSongIndex == 0)
                 this.currentSongIndex = this.songs.length - 1;
             else {
                 this.currentSongIndex--;
             }
         }
-        if (selectedIndex)
+        else
             this.currentSongIndex = selectedIndex;
     },
 
@@ -450,6 +451,7 @@ const app = {
                 songsList.forEach((song, selectedIndex) => {
                     song.addEventListener("click", (e) => {
                         //Nếu click vào button more hoặc sub menu
+                        console.log(selectedIndex);
                         if (e.target.classList.contains("moreButton") || e.target.classList.contains("song-more")) { }
                         else this.goToSelectedSong(selectedIndex);
                     });

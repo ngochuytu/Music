@@ -7,19 +7,6 @@ const app = {
     random: false,
     volume: 1,
 
-    getSongs: function () {
-        const xhr = new XMLHttpRequest();
-        xhr.open("GET", "../data/songs.json", false);
-        xhr.addEventListener("load", () => {
-            if (xhr.status === 200) {
-                this.songs = JSON.parse(xhr.responseText);
-                console.log("data received");
-            }
-
-        });
-        xhr.send();
-    },
-
     setCurrentSongIndex: function (next, previous, repeat, random, selectedIndex) {
         if (repeat)
             //Do nothing
@@ -96,7 +83,6 @@ const app = {
     },
 
     start: function () {
-        this.getSongs();
         const sections = {
             header: `
                 <header class="sticky">
@@ -492,5 +478,16 @@ const app = {
         eventHandler();
     }
 }
+
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "../data/songs.json", false);
+xhr.addEventListener("load", () => {
+    if (xhr.status === 200) {
+        app.songs = JSON.parse(xhr.responseText);
+        console.log("data received");
+    }
+
+});
+xhr.send();
 
 app.start();

@@ -60,19 +60,19 @@ const app = {
     },
 
     goToNextSong: function () {
-        this.setCurrentSongIndex(true, false, false, false);
+        this.setCurrentSongIndex(true, false, false, false, false);
         this.start();
         this.playAndStopSong();
     },
 
     goToPreviousSong: function () {
-        this.setCurrentSongIndex(false, true, false, false);
+        this.setCurrentSongIndex(false, true, false, false, false);
         this.start();
         this.playAndStopSong();
     },
 
     goToRandomSong: function () {
-        this.setCurrentSongIndex(false, false, false, this.random);
+        this.setCurrentSongIndex(false, false, false, this.random, false);
         this.start();
         this.playAndStopSong();
     },

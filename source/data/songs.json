@@ -1,5 +1,14 @@
 [
     {
+        "name": "Mùa yêu",
+        "singer": "The Wall Nutszz",
+        "source": "../../assets/songs/MuaYeu.mp3",
+        "duration": "04:38",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaYeu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaYeu_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
         "name": "Chờ đến bao giờ",
         "singer": "Bệt Band",
         "source": "../../assets/songs/ChoDenBaoGio.mp3",
@@ -79,5 +88,329 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/GiaNhuEmNhinLai_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/GiaNhuEmNhinLai_Mobile.jpg",
         "updated": "24/03/2021"
+    },
+    {
+        "name": "Không cân",
+        "singer": "the SHEEP",
+        "source": "../../assets/songs/KhongCan.mp3",
+        "duration": "03:45",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KhongCan_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KhongCan_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Thuận theo ý trời",
+        "singer": "Bùi Anh Tuấn",
+        "source": "../../assets/songs/ThuanTheoYTroi.mp3",
+        "duration": "03:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThuanTheoYTroi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThuanTheoYTroi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Không sao mà em đây rồi",
+        "singer": "SUNI HẠ LINH ft Lou Hoàng",
+        "source": "../../assets/songs/KhongSaoMaEmDayRoi.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KhongSaoMaEmDayRoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KhongSaoMaEmDayRoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Mãi chẳng thuộc về nhau",
+        "singer": "Bozitt",
+        "source": "../../assets/songs/MaiChangThuocVeNhau.mp3",
+        "duration": "06:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MaiChangThuocVeNhau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MaiChangThuocVeNhau_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Phố đã lên đèn",
+        "singer": "Huyền Tâm Môn",
+        "source": "../../assets/songs/PhoDaLenDen.mp3",
+        "duration": "04:41",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/PhoDaLenDen_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/PhoDaLenDen_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Độ đúng đời",
+        "singer": "THANH HƯNG ft. ĐỘ MIXI",
+        "source": "../../assets/songs/DoDungDoi.mp3",
+        "duration": "03:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DoDungDoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DoDungDoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Nợ ai đó lời xin lỗi",
+        "singer": "Bozitt",
+        "source": "../../assets/songs/NoAiDoLoiXinLoi.mp3",
+        "duration": "05:37",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NoAiDoLoiXinLoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NoAiDoLoiXinLoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Kẻ mộng mơ",
+        "singer": "Reddy",
+        "source": "../../assets/songs/KeMongMo.mp3",
+        "duration": "06:00",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KeMongMo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KeMongMo_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Về với anh đi",
+        "singer": "Nguyễn Quang Quý",
+        "source": "../../assets/songs/VeVoiAnhDi.mp3",
+        "duration": "05:11",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/VeVoiAnhDi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/VeVoiAnhDi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Anh mệt rồi",
+        "singer": "Anh Quân Idol",
+        "source": "../../assets/songs/AnhMetRoi.mp3",
+        "duration": "04:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhMetRoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhMetRoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Là ai mang nắng đi xa",
+        "singer": "Yang",
+        "source": "../../assets/songs/LaAiMangNangDiXa.mp3",
+        "duration": "06:11",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LaAiMangNangDiXa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LaAiMangNangDiXa_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Chẳng thể tìm được em",
+        "singer": "PhucXp",
+        "source": "../../assets/songs/ChangTheTimDuocEm.mp3",
+        "duration": "06:50",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChangTheTimDuocEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChangTheTimDuocEm_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Mùa yêu đầu",
+        "singer": "Đinh Mạnh Ninh",
+        "source": "../../assets/songs/MuaYeuDau.mp3",
+        "duration": "04:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaYeuDau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaYeuDau_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Gác lại âu lo",
+        "singer": "Da LAB ft. Miu Lê",
+        "source": "../../assets/songs/GacLaiAuLo.mp3",
+        "duration": "04:34",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GacLaiAuLo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GacLaiAuLo_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Hương ngọc lan",
+        "singer": "Thiếu Nữ Band",
+        "source": "../../assets/songs/HuongNgocLan.mp3",
+        "duration": "05:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HuongNgocLan_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HuongNgocLan_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Có anh ở đây rồi",
+        "singer": "Anh Quân Idol",
+        "source": "../../assets/songs/CoAnhODayRoi.mp3",
+        "duration": "04:52",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoAnhODayRoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoAnhODayRoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Anh sẽ tốt mà",
+        "singer": "Thùy Chi ft. Phạm Hồng Phước",
+        "source": "../../assets/songs/AnhSeTotMa.mp3",
+        "duration": "04:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhSeTotMa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhSeTotMa_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Beautiful Girl",
+        "singer": "SKULL & HAHA",
+        "source": "../../assets/songs/BeautifulGirl.mp3",
+        "duration": "04:02",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BeautifulGirl_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BeautifulGirl_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Chẳng nói nên lời",
+        "singer": "Nguyễn Hoàng Dũng",
+        "source": "../../assets/songs/ChangNoiNenLoi.mp3",
+        "duration": "05:29",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChangNoiNenLoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChangNoiNenLoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Dù có cách xa",
+        "singer": "Đinh Mạnh Ninh",
+        "source": "../../assets/songs/DuCoCachXa.mp3",
+        "duration": "04:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuCoCachXa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuCoCachXa_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Say you do",
+        "singer": "Tiên Tiên",
+        "source": "../../assets/songs/SayYouDo.mp3",
+        "duration": "03:41",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SayYouDo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SayYouDo_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Nơi này có anh",
+        "singer": "Sơn Tùng M-TP",
+        "source": "../../assets/songs/NoiNayCoAnh.mp3",
+        "duration": "04:20",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NoiNayCoAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NoiNayCoAnh_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Lạc nhau có phải muôn đời",
+        "singer": "Erik",
+        "source": "../../assets/songs/LacNhauCoPhaiMuonDoi.mp3",
+        "duration": "04:43",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LacNhauCoPhaiMuonDoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LacNhauCoPhaiMuonDoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Cưới nhau đi",
+        "singer": "Bùi Anh Tuấn , Hiền Hồ",
+        "source": "../../assets/songs/CuoiNhauDi.mp3",
+        "duration": "04:10",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CuoiNhauDi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CuoiNhauDi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "I do",
+        "singer": "911",
+        "source": "../../assets/songs/IDo.mp3",
+        "duration": "03:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/IDo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/IDo_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Em không sai, chúng ta sai",
+        "singer": "Erik",
+        "source": "../../assets/songs/EmKhongSaiChungTaSai.mp3",
+        "duration": "04:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmKhongSaiChungTaSai_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmKhongSaiChungTaSai_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Nàng thơ",
+        "singer": "Nguyễn Hoàng Dũng",
+        "source": "../../assets/songs/NangTho.mp3",
+        "duration": "04:15",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NangTho_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NangTho_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Những gì anh nói",
+        "singer": "Bozitt",
+        "source": "../../assets/songs/NhungGiAnhNoi.mp3",
+        "duration": "06:15",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NhungGiAnhNoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NhungGiAnhNoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Em có nghe",
+        "singer": "Kha",
+        "source": "../../assets/songs/EmCoNghe.mp3",
+        "duration": "04:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmCoNghe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmCoNghe_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Happy ending",
+        "singer": "Erik",
+        "source": "../../assets/songs/HappyEnding.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HappyEnding_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HappyEnding_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Missing you",
+        "singer": "Hoàng Nhi",
+        "source": "../../assets/songs/MissingYou.mp3",
+        "duration": "04:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Chuyện rằng",
+        "singer": "Thịnh Suy",
+        "source": "../../assets/songs/ChuyenRang.mp3",
+        "duration": "04:35",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChuyenRang_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChuyenRang_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Cups",
+        "singer": "Anna Kendrick",
+        "source": "../../assets/songs/Cups.mp3",
+        "duration": "02:11",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Cups_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Cups_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Cũng đành thôi",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/CungDanhThoi.mp3",
+        "duration": "04:32",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CungDanhThoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CungDanhThoi_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Em của quá khứ",
+        "singer": "Nguyễn Đình Vũ",
+        "source": "../../assets/songs/EmCuaQuaKhu.mp3",
+        "duration": "03:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmCuaQuaKhu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmCuaQuaKhu_Mobile.jpg",
+        "updated": "02/04/2021"
+    },
+    {
+        "name": "Mùa xa nhau",
+        "singer": "Emily",
+        "source": "../../assets/songs/MuaXaNhau.mp3",
+        "duration": "04:34",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaXaNhau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaXaNhau_Mobile.jpg",
+        "updated": "02/04/2021"
     }
 ]

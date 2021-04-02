@@ -9,6 +9,24 @@
         "updated": "14/03/2021"
     },
     {
+        "name": "Suýt nữa thì",
+        "singer": "Andiez",
+        "source": "../../assets/songs/SuytNuaThi.mp3",
+        "duration": "04:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SuytNuaThi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SuytNuaThi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Love Story",
+        "singer": "Tạ Anh Thắng",
+        "source": "../../assets/songs/LoveStory.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoveStory_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoveStory_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
         "name": "Chờ đến bao giờ",
         "singer": "Bệt Band",
         "source": "../../assets/songs/ChoDenBaoGio.mp3",
@@ -663,6 +681,510 @@
         "duration": "03:23",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhKhongMuonBatCongVoiEm_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhKhongMuonBatCongVoiEm_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Xe đạp",
+        "singer": "Thùy Chi ft. M4U",
+        "source": "../../assets/songs/XeDap.mp3",
+        "duration": "05:03",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/XeDap_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/XeDap_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Dòng thời gian",
+        "singer": "Nguyễn Hải Phong",
+        "source": "../../assets/songs/DongThoiGian.mp3",
+        "duration": "05:06",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ba kể con nghe",
+        "singer": "Dương Trần Nghĩa",
+        "source": "../../assets/songs/BaKeConNghe.mp3",
+        "duration": "06:19",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BaKeConNghe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BaKeConNghe_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Người tôi yêu",
+        "singer": "Chi Dân",
+        "source": "../../assets/songs/NguoiToiYeu.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ánh nắng của anh",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/AnhNangCuaAnh.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhNangCuaAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhNangCuaAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Bức tranh từ nước mắt",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/BucTranhTuNuocMat.mp3",
+        "duration": "04:36",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BucTranhTuNuocMat_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BucTranhTuNuocMat_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Day dứt nỗi đau",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/DayDutNoiDau.mp3",
+        "duration": "05:15",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Yêu lại từ đầu",
+        "singer": "Khắc Việt",
+        "source": "../../assets/songs/YeuLaiTuDau.mp3",
+        "duration": "03:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuLaiTuDau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuLaiTuDau_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Gió vẫn hát",
+        "singer": "Long Phạm",
+        "source": "../../assets/songs/GioVanHat.mp3",
+        "duration": "04:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GioVanHat_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GioVanHat_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Sai người sai thời điểm",
+        "singer": "Thanh Hưng",
+        "source": "../../assets/songs/SaiNguoiSaiThoiDiem.mp3",
+        "duration": "06:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SaiNguoiSaiThoiDiem_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SaiNguoiSaiThoiDiem_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Đừng quên tên anh",
+        "singer": "Hoa Vinh",
+        "source": "../../assets/songs/DungQuenTenAnh.mp3",
+        "duration": "05:48",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DungQuenTenAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DungQuenTenAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Người ấy",
+        "singer": "Trịnh Thăng Bình",
+        "source": "../../assets/songs/NguoiAy.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NguoiAy_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NguoiAy_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Chờ anh nhé",
+        "singer": "Hoàng Dũng, Hoàng Rob",
+        "source": "../../assets/songs/ChoAnhNhe.mp3",
+        "duration": "04:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoAnhNhe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoAnhNhe_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Yêu một người có lẽ",
+        "singer": "Lou Hoàng ft Miu Lê",
+        "source": "../../assets/songs/YeuMotNguoiCoLe.mp3",
+        "duration": "04:20",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuMotNguoiCoLe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuMotNguoiCoLe_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Đếm ngày xa em",
+        "singer": "OnlyC ft Lou Hoàng",
+        "source": "../../assets/songs/DemNgayXaEm.mp3",
+        "duration": "04:17",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DemNgayXaEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DemNgayXaEm_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Thằng điên",
+        "singer": "Justatee ft Phương Ly",
+        "source": "../../assets/songs/ThangDien.mp3",
+        "duration": "03:50",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThangDien_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThangDien_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Lời yêu ngây dại",
+        "singer": "Kha",
+        "source": "../../assets/songs/LoiYeuNgayDai.mp3",
+        "duration": "04:33",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Hơn cả yêu",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/HonCaYeu.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HonCaYeu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HonCaYeu_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Chỉ anh hiểu em",
+        "singer": "Khắc Việt",
+        "source": "../../assets/songs/ChiAnhHieuEm.mp3",
+        "duration": "04:29",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Suy nghĩ trong anh",
+        "singer": "Nam Cường ft Khắc Việt",
+        "source": "../../assets/songs/SuyNghiTrongAnh.mp3",
+        "duration": "05:10",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SuyNghiTrongAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SuyNghiTrongAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Chuyện của mùa đông",
+        "singer": "Tiến Thành",
+        "source": "../../assets/songs/ChuyenCuaMuaDong.mp3",
+        "duration": "06:00",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChuyenCuaMuaDong_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChuyenCuaMuaDong_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ừ có anh đây",
+        "singer": "Tino",
+        "source": "../../assets/songs/UCoAnhDay.mp3",
+        "duration": "06:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/UCoAnhDay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/UCoAnhDay_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "She neva knows",
+        "singer": "JustaTee",
+        "source": "../../assets/songs/SheNevaKnows.mp3",
+        "duration": "04:47",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Con đường tôi",
+        "singer": "Trọng Hiếu",
+        "source": "../../assets/songs/ConDuongToi.mp3",
+        "duration": "03:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Anh thương em nhất mà",
+        "singer": "Lã. x Log x TiB",
+        "source": "../../assets/songs/AnhThuongEmNhatMa.mp3",
+        "duration": "03:14",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhThuongEmNhatMa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhThuongEmNhatMa_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ngày gặp em",
+        "singer": "TAT",
+        "source": "../../assets/songs/NgayGapEm.mp3",
+        "duration": "04:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NgayGapEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NgayGapEm_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Điều kết thúc",
+        "singer": "Alex Lâm",
+        "source": "../../assets/songs/DieuKetThuc.mp3",
+        "duration": "05:04",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DieuKetThuc_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DieuKetThuc_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Vài giây nữa thôi",
+        "singer": "Reddy",
+        "source": "../../assets/songs/VaiGiayNuaThoi.mp3",
+        "duration": "04:41",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/VaiGiayNuaThoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/VaiGiayNuaThoi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Gửi",
+        "singer": "Reddy",
+        "source": "../../assets/songs/Gui.mp3",
+        "duration": "05:09",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Gui_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Gui_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Nếu một ngày",
+        "singer": "Reddy",
+        "source": "../../assets/songs/NeuMotNgay.mp3",
+        "duration": "04:55",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NeuMotNgay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NeuMotNgay_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Sợ",
+        "singer": "Reddy",
+        "source": "../../assets/songs/So.mp3",
+        "duration": "04:11",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/So_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/So_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Thì thôi",
+        "singer": "Reddy",
+        "source": "../../assets/songs/ThiThoi.mp3",
+        "duration": "05:56",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThiThoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThiThoi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Thời thanh xuân sẽ qua",
+        "singer": "Phạm Hồng Phước ft. Văn Mai Hương",
+        "source": "../../assets/songs/ThoiThanhXuanSeQua.mp3",
+        "duration": "06:51",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThoiThanhXuanSeQua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThoiThanhXuanSeQua_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ngày xưa em đến",
+        "singer": "Anh Khang",
+        "source": "../../assets/songs/NgayXuaEmDen.mp3",
+        "duration": "04:18",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NgayXuaEmDen_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NgayXuaEmDen_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Anh mơ",
+        "singer": "Anh Khang",
+        "source": "../../assets/songs/AnhMo.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhMo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhMo_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Way back home",
+        "singer": "SHAUN",
+        "source": "../../assets/songs/WayBackHome.mp3",
+        "duration": "03:42",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/WayBackHome_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/WayBackHome_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Chẳng để em xa anh",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/ChangDeEmXaAnh.mp3",
+        "duration": "04:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChangDeEmXaAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChangDeEmXaAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Tớ thích cậu nhường nào rồi cậu sẽ biết thôi",
+        "singer": "Hồ Nhất Thiên",
+        "source": "../../assets/songs/ToThichCauNhuongNaoRoiCauSeBietThoi.mp3",
+        "duration": "03:48",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ToThichCauNhuongNaoRoiCauSeBietThoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ToThichCauNhuongNaoRoiCauSeBietThoi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Cafe, thuốc lá & Những ngày vui",
+        "singer": "Hồ Nhất Thiên",
+        "source": "../../assets/songs/CafeThuocLaVaNhungNgayVui.mp3",
+        "duration": "05:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CafeThuocLaVaNhungNgayVui_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CafeThuocLaVaNhungNgayVui_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Tự lau nước mắt",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/TuLauNuocMat.mp3",
+        "duration": "05:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TuLauNuocMat_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TuLauNuocMat_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Một đêm say",
+        "singer": "Thịnh Suy",
+        "source": "../../assets/songs/MotDemSay.mp3",
+        "duration": "04:22",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Với anh em vẫn là cô bé",
+        "singer": "Xuân Hiển",
+        "source": "../../assets/songs/VoiAnhEmVanLaCoBe.mp3",
+        "duration": "04:51",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Xin lỗi anh yêu em",
+        "singer": "Xuân Hiển",
+        "source": "../../assets/songs/XinLoiAnhYeuEm.mp3",
+        "duration": "05:52",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Gương mặt lạ lẫm",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/GuongMatLaLam.mp3",
+        "duration": "05:42",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Cô gái m52",
+        "singer": "HuyR ft. Tùng Viu",
+        "source": "../../assets/songs/CoGaiM52.mp3",
+        "duration": "03:31",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoGaiM52_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoGaiM52_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Thấy là yêu thương",
+        "singer": "Only C",
+        "source": "../../assets/songs/ThayLaYeuThuong.mp3",
+        "duration": "04:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThayLaYeuThuong_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThayLaYeuThuong_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Khi người lớn cô đơn",
+        "singer": "Phạm Hồng Phước",
+        "source": "../../assets/songs/KhiNguoiLonCoDon.mp3",
+        "duration": "05:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KhiNguoiLonCoDon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KhiNguoiLonCoDon_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Tình yêu chậm trễ",
+        "singer": "Phạm Hồng Phước",
+        "source": "../../assets/songs/TinhYeuChamTre.mp3",
+        "duration": "03:47",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TinhYeuChamTre_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TinhYeuChamTre_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Đã lỡ yêu em nhiều",
+        "singer": "JustaTee",
+        "source": "../../assets/songs/DaLoYeuEmNhieu.mp3",
+        "duration": "04:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DaLoYeuEmNhieu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DaLoYeuEmNhieu_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Em dạo này",
+        "singer": "Ngọt",
+        "source": "../../assets/songs/EmDaoNay.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmDaoNay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmDaoNay_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ta quên nhau chưa",
+        "singer": "Juun Đăng Dũng ft. R.Tee",
+        "source": "../../assets/songs/TaQuenNhauChua.mp3",
+        "duration": "03:49",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TaQuenNhauChua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TaQuenNhauChua_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "The Scientist",
+        "singer": "Juun Đăng Dũng ft. R.Tee",
+        "source": "../../assets/songs/TheScientist.mp3",
+        "duration": "03:36",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Yêu là 'Tha Thu'",
+        "singer": "OnlyC",
+        "source": "../../assets/songs/YeuLaThaThu.mp3",
+        "duration": "04:33",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuLaThaThu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuLaThaThu_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Những ngày vỡ đôi",
+        "singer": "Đinh Uyên",
+        "source": "../../assets/songs/NhungNgayVoDoi.mp3",
+        "duration": "05:06",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NhungNgayVoDoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NhungNgayVoDoi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Anh đã quen với nỗi cô đơn",
+        "singer": "Soobin Hoàng Sơn",
+        "source": "../../assets/songs/AnhDaQuenVoiNoiCoDon.mp3",
+        "duration": "03:56",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhDaQuenVoiNoiCoDon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhDaQuenVoiNoiCoDon_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Từ ngày em đến",
+        "singer": "Da LAB",
+        "source": "../../assets/songs/TuNgayEmDen.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TuNgayEmDen_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TuNgayEmDen_Mobile.jpg",
         "updated": "03/04/2021"
     }
 ]

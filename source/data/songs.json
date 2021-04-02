@@ -90,7 +90,7 @@
         "updated": "24/03/2021"
     },
     {
-        "name": "Không cân",
+        "name": "Không cần",
         "singer": "the SHEEP",
         "source": "../../assets/songs/KhongCan.mp3",
         "duration": "03:45",
@@ -412,5 +412,257 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaXaNhau_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaXaNhau_Mobile.jpg",
         "updated": "02/04/2021"
+    },
+    {
+        "name": "Yêu được không",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/YeuDuocKhong.mp3",
+        "duration": "05:04",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuDuocKhong_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuDuocKhong_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Dù chẳng phải anh",
+        "singer": "Đinh Mạnh Ninh",
+        "source": "../../assets/songs/DuChangPhaiAnh.mp3",
+        "duration": "05:53",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuChangPhaiAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuChangPhaiAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Màu nước mắt",
+        "singer": "Nguyễn Trần Trung Quân",
+        "source": "../../assets/songs/MauNuocMat.mp3",
+        "duration": "05:37",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MauNuocMat_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MauNuocMat_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Người con gái ta thương",
+        "singer": "Hà Anh Tuấn",
+        "source": "../../assets/songs/NguoiConGaiTaThuong.mp3",
+        "duration": "06:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NguoiConGaiTaThuong_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NguoiConGaiTaThuong_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Tình đắng như ly cà phê",
+        "singer": "nân. x Ngơ",
+        "source": "../../assets/songs/TinhDangNhuLyCaPhe.mp3",
+        "duration": "03:35",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TinhDangNhuLyCaPhe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TinhDangNhuLyCaPhe_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Về phía mưa",
+        "singer": "Thế Bảo",
+        "source": "../../assets/songs/VePhiaMua.mp3",
+        "duration": "05:36",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/VePhiaMua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/VePhiaMua_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Cuối chiều",
+        "singer": "Hải Sâm",
+        "source": "../../assets/songs/CuoiChieu.mp3",
+        "duration": "03:50",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CuoiChieu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CuoiChieu_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Dù chỉ là",
+        "singer": "Hoàng Chu ft. Tiến Thành",
+        "source": "../../assets/songs/DuChiLa.mp3",
+        "duration": "04:02",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuChiLa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuChiLa_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Giá như anh",
+        "singer": "JayKii",
+        "source": "../../assets/songs/GiaNhuAnh.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GiaNhuAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GiaNhuAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Hẹn một mai",
+        "singer": "Bùi Anh Tuấn",
+        "source": "../../assets/songs/HenMotMai.mp3",
+        "duration": "04:43",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HenMotMai_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HenMotMai_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Lạnh thôi đừng mưa",
+        "singer": "Hải Sâm",
+        "source": "../../assets/songs/LanhThoiDungMua.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LanhThoiDungMua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LanhThoiDungMua_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Lạ lùng",
+        "singer": "Vũ",
+        "source": "../../assets/songs/LaLung.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LaLung_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LaLung_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Nhớ em",
+        "singer": "Minh Vương M4U",
+        "source": "../../assets/songs/NhoEm.mp3",
+        "duration": "05:45",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NhoEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NhoEm_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Phút ban đầu",
+        "singer": "Vũ",
+        "source": "../../assets/songs/PhutBanDau.mp3",
+        "duration": "04:00",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/PhutBanDau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/PhutBanDau_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Thả vào mưa",
+        "singer": "Trung Quân",
+        "source": "../../assets/songs/ThaVaoMua.mp3",
+        "duration": "05:44",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThaVaoMua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThaVaoMua_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Trời giấu trời mang đi",
+        "singer": "Amee x Viruss",
+        "source": "../../assets/songs/TroiGiauTroiMangDi.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TroiGiauTroiMangDi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TroiGiauTroiMangDi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Tình yêu chắp vá",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/TinhYeuChapVa.mp3",
+        "duration": "04:42",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TinhYeuChapVa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TinhYeuChapVa_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Đừng lo anh đợi mà",
+        "singer": "Mr Siro",
+        "source": "../../assets/songs/DungLoAnhDoiMa.mp3",
+        "duration": "04:47",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DungLoAnhDoiMa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DungLoAnhDoiMa_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "3 1 0 7",
+        "singer": "Duongg",
+        "source": "../../assets/songs/3107.mp3",
+        "duration": "02:39",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/3107_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/3107_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Daydream",
+        "singer": "Soobin Hoàng Sơn ft. BigDaddy",
+        "source": "../../assets/songs/Daydreams.mp3",
+        "duration": "04:53",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Sài Gòn của anh",
+        "singer": "HuyR, K-ICM",
+        "source": "../../assets/songs/SaiGonCuaAnh.mp3",
+        "duration": "04:32",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SaiGonCuaAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SaiGonCuaAnh_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Yêu em rất nhiều",
+        "singer": "Hoàng Tôn",
+        "source": "../../assets/songs/YeuEmRatNhieu.mp3",
+        "duration": "04:33",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuEmRatNhieu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuEmRatNhieu_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Đồi hoa mặt trời",
+        "singer": "Hoàng Yến Chibi",
+        "source": "../../assets/songs/DoiHoaMatTroi.mp3",
+        "duration": "04:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DoiHoaMatTroi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DoiHoaMatTroi_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Ta còn yêu nhau",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/TaConYeuNhau.mp3",
+        "duration": "03:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TaConYeuNhau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TaConYeuNhau_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Phía sau một cô gái",
+        "singer": "SooBin Hoàng Sơn",
+        "source": "../../assets/songs/PhiaSauMotCoGai.mp3",
+        "duration": "04:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/PhiaSauMotCoGai_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/PhiaSauMotCoGai_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Hôm nay tôi buồn",
+        "singer": "Phùng Khánh Linh",
+        "source": "../../assets/songs/HomNayToiBuon.mp3",
+        "duration": "04:38",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HomNayToiBuon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HomNayToiBuon_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "1 Phút",
+        "singer": "Andiez",
+        "source": "../../assets/songs/1Phut.mp3",
+        "duration": "06:16",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/1Phut_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/1Phut_Mobile.jpg",
+        "updated": "03/04/2021"
+    },
+    {
+        "name": "Anh không muốn bất công với em",
+        "singer": "ACENS",
+        "source": "../../assets/songs/AnhKhongMuonBatCongVoiEm.mp3",
+        "duration": "03:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhKhongMuonBatCongVoiEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhKhongMuonBatCongVoiEm_Mobile.jpg",
+        "updated": "03/04/2021"
     }
 ]

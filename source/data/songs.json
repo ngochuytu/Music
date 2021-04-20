@@ -27,21 +27,57 @@
         "updated": "03/04/2021"
     },
     {
-        "name": "Chờ đến bao giờ",
-        "singer": "Bệt Band",
-        "source": "../../assets/songs/ChoDenBaoGio.mp3",
-        "duration": "02:28",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoDenBaoGio_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg",
-        "updated": "14/03/2021"
-    },
-    {
         "name": "Chờ đợi có đáng sợ",
         "singer": "Andiez",
         "source": "../../assets/songs/ChoDoiCoDangSo.mp3",
         "duration": "04:46",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoDoiCoDangSo_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoDoiCoDangSo_Mobile.jpg",
+        "updated": "14/03/2021"
+    },
+    {
+        "name": "Gói những bông hoa nhỏ tặng em",
+        "singer": "Kim chỉ Nam",
+        "source": "../../assets/songs/GoiNhungBongHoaNhoTangEm.mp3",
+        "duration": "04:51",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GoiNhungBongHoaNhoTangEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GoiNhungBongHoaNhoTangEm_Mobile.jpg",
+        "updated": "21/04/2021"
+    },
+    {
+        "name": "Chúng mình cùng biết",
+        "singer": "Naa",
+        "source": "../../assets/songs/ChungMinhCungBiet.mp3",
+        "duration": "02:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChungMinhCungBiet_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChungMinhCungBiet_Mobile.jpg",
+        "updated": "21/04/2021"
+    },
+    {
+        "name": "Một mình ta",
+        "singer": "BuiTruongLinh",
+        "source": "../../assets/songs/MotMinhTa.mp3",
+        "duration": "04:29",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MotMinhTa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MotMinhTa_Mobile.jpg",
+        "updated": "21/04/2021"
+    },
+    {
+        "name": "Giọt nắng bên thềm",
+        "singer": "Anh Khang",
+        "source": "../../assets/songs/GiotNangBenThem.mp3",
+        "duration": "05:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GiotNangBenThem_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GiotNangBenThem_Mobile.jpg",
+        "updated": "21/04/2021"
+    },
+    {
+        "name": "Chờ đến bao giờ",
+        "singer": "Bệt Band",
+        "source": "../../assets/songs/ChoDenBaoGio.mp3",
+        "duration": "02:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoDenBaoGio_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoDenBaoGio_Mobile.jpg",
         "updated": "14/03/2021"
     },
     {

@@ -39,7 +39,7 @@
         "name": "Gói những bông hoa nhỏ tặng em",
         "singer": "Kim chỉ Nam",
         "source": "../../assets/songs/GoiNhungBongHoaNhoTangEm.mp3",
-        "duration": "04:51",
+        "duration": "03:51",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/GoiNhungBongHoaNhoTangEm_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/GoiNhungBongHoaNhoTangEm_Mobile.jpg",
         "updated": "21/04/2021"
@@ -61,6 +61,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/MotMinhTa_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/MotMinhTa_Mobile.jpg",
         "updated": "21/04/2021"
+    },
+    {
+        "name": "Đường tôi chở em về",
+        "singer": "BuiTruongLinh",
+        "source": "../../assets/songs/DuongToiChoEmVe.mp3",
+        "duration": "04:26",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuongToiChoEmVe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuongToiChoEmVe_Mobile.jpg",
+        "updated": "24/04/2021"
     },
     {
         "name": "Giọt nắng bên thềm",

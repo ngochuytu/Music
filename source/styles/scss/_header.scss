@@ -8,6 +8,7 @@ header.sticky{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px 0;
 
     .search-wrapper{
@@ -16,6 +17,10 @@ header{
         position: relative;
         width: 70%;
         max-width: 450px;
+        
+        @media screen and (max-width: $br-small) {
+            width: 60%;
+        }
 
         input{
             width: 100%;
@@ -34,6 +39,93 @@ header{
         .fa-search{
             position: absolute;
             left: 10px;
+        }
+    }
+    
+    .timer-wrapper{
+        position: absolute;
+        right: 30px; //Main padding
+        cursor: pointer;
+        font-size: 1.5rem;
+        z-index: 999; //On top of Popup
+
+
+        @media screen and (max-width: $br-small) {
+            right: 20px;
+        }
+
+        i{
+            &:hover,
+            &.active{
+                color: $text-hover;
+            }
+        }
+
+        .timer-handler{
+            position: absolute;
+            right: -10px;
+            top: -5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $text-hover;
+            font-size: .6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            
+            &.active{
+                display: flex;
+            }
+        }
+    }
+
+    .timer-form{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 20px;
+        background: $timer-form-bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        input, button{
+            height: 35px;
+            padding: 5px 0 5px 5px;
+            border-radius: 0;
+            border: 1px solid $button-bg;
+            background: #000;
+            outline: none;
+            color: #fff;
+        }
+
+        input{
+            width: 150px;
+            margin-right: 10px;
+
+            &.error{
+                border: 1px solid $timer-input-error-border;
+            }
+
+            &::placeholder{
+                color: #fff;
+            }
+        }
+
+        button{
+            padding: 5px;
+            cursor: pointer;
+            transition: background 200ms linear;
+
+            &:hover{
+                background: $button-bg;
+            }
         }
     }
 }

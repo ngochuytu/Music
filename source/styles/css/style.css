@@ -37,6 +37,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px 0;
 }
 
@@ -50,6 +53,12 @@ header .search-wrapper {
   position: relative;
   width: 70%;
   max-width: 450px;
+}
+
+@media screen and (max-width: 450px) {
+  header .search-wrapper {
+    width: 60%;
+  }
 }
 
 header .search-wrapper input {
@@ -81,6 +90,119 @@ header .search-wrapper input, header .search-wrapper input::placeholder {
 header .search-wrapper .fa-search {
   position: absolute;
   left: 10px;
+}
+
+header .timer-wrapper {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 999;
+}
+
+@media screen and (max-width: 450px) {
+  header .timer-wrapper {
+    right: 20px;
+  }
+}
+
+header .timer-wrapper i:hover, header .timer-wrapper i.active {
+  color: #c662ef;
+}
+
+header .timer-wrapper .timer-handler {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c662ef;
+  font-size: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+header .timer-wrapper .timer-handler.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .timer-form {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header .timer-form input, header .timer-form button {
+  height: 35px;
+  padding: 5px 0 5px 5px;
+  border-radius: 0;
+  border: 1px solid #7200a1;
+  background: #000;
+  outline: none;
+  color: #fff;
+}
+
+header .timer-form input {
+  width: 150px;
+  margin-right: 10px;
+}
+
+header .timer-form input.error {
+  border: 1px solid #f00;
+}
+
+header .timer-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+header .timer-form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+header .timer-form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+header .timer-form input::placeholder {
+  color: #fff;
+}
+
+header .timer-form button {
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: background 200ms linear;
+  transition: background 200ms linear;
+}
+
+header .timer-form button:hover {
+  background: #7200a1;
 }
 
 .main {

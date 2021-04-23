@@ -6,6 +6,7 @@ const app = {
     repeat: false,
     random: false,
     volume: 1,
+    timer: 0,
 
     setCurrentSongIndex: function (next, previous, repeat, random, selectedIndex) {
         if (repeat) {
@@ -85,11 +86,17 @@ const app = {
 
     start: function () {
         const sections = {
+            title: `Music - ${this.getCurrentSong().name}`,
+
             header: `
                 <header class="sticky">
                     <div class="search-wrapper">
                         <input type="text" placeholder="Nhập tên bài hát">
                         <i class="fas fa-search"></i>
+                    </div>
+                    <div class="timer-wrapper">
+                        <i class="far fa-clock"></i>
+                        <div class="timer-handler" id="timerHandler"></div>
                     </div>
                 </header>
             `,
@@ -207,6 +214,8 @@ const app = {
         }
 
         const render = () => {
+            document.title = `${sections.title}`;
+
             document.body.innerHTML = `
                 ${sections.header}
                 <section class="main">
@@ -251,7 +260,6 @@ const app = {
                     pauseButton.classList.add("hidden");
                 }
             }
-
             const animatingSongCDs = () => {
                 const songCDs = document.querySelectorAll(".song-cd");
                 songCDs.forEach(songCD => {
@@ -262,9 +270,22 @@ const app = {
                 });
             }
 
+            const stylingTimer = () => {
+                const timerHandler = document.getElementById("timerHandler");
+                if (this.timer) {
+                    timerHandler.classList.add("active");
+                    timerHandler.innerHTML = this.timer;
+                }
+                else {
+                    timerHandler.classList.remove("active");
+                    timerHandler.innerHTML = "";
+                }
+            }
+
             stylingRepeatAndRandomButton();
             togglingPlayButton();
             animatingSongCDs();
+            stylingTimer();
         }
 
         const eventHandler = () => {
@@ -466,6 +487,89 @@ const app = {
                 });
             }
 
+            const setTimer = () => {
+                let previousIntervalID = 0; //Để clearInterval cũ nếu có
+
+                const timerButtonClick = () => {
+                    const timerButton = document.getElementById("timerButton");
+                    const header = document.querySelector("header");
+                    const timerForm = document.getElementById("timerForm");
+
+                    const timerCountDown = () => {
+                        clearInterval(previousIntervalID);
+                        const countDown = () => {
+                            if (this.timer) {
+                                this.timer--;
+                                stylingHandler(); //Update thời gian
+                            }
+                            //K else để tránh chạy thêm 1 lần interval
+                            if (!this.timer) {
+                                clearInterval(countDownSetIntervalHandler);
+                                this.playing = false;
+                                this.playAndStopSong();
+                                stylingHandler(); //Update styling sau khi dừng
+                            }
+                        }
+                        const countDownSetIntervalHandler = setInterval(countDown, 1000 * 60);
+
+                        previousIntervalID = countDownSetIntervalHandler;
+                    }
+
+                    const timeValidation = (time, timerInput) => {
+                        if (isNaN(time) == true || time == "" || time <= 0 || time >= 1000) {
+                            timerInput.classList.add("error");
+                        }
+                        else {
+                            this.timer = time;
+                            timerInput.classList.remove("error");
+                            header.removeChild(timerForm); //Tự động đóng nếu nhập thành công
+                            stylingHandler(); //Add css cho timer
+                            timerCountDown(); //Đếm ngược
+                        }
+                    }
+
+                    timerButton.addEventListener("click", () => {
+                        const timerInput = document.getElementById("timerInput");
+                        timeValidation(timerInput.value, timerInput);
+                    });
+                }
+
+
+
+                const openAndCloseTimerForm = () => {
+                    const timerWrapper = document.querySelector(".timer-wrapper");
+                    const header = document.querySelector("header");
+                    const timerInputForm =
+                        `<div class="timer-form" id="timerForm">
+                            <input type="text" id="timerInput" placeholder="Nhập số phút hẹn giờ" min="0" max="999" />
+                            <button type="button" id="timerButton">Xác nhận</button>
+                        </div>`;
+
+                    timerWrapper.addEventListener("click", () => {
+                        const timerForm = document.getElementById("timerForm");
+                        //Đóng cửa sổ khi click đồng hồ
+                        if (timerForm) {
+                            header.removeChild(timerForm);
+                        }
+                        else {
+                            header.innerHTML += timerInputForm;
+                            const timerForm = document.getElementById("timerForm");
+
+                            //Đóng cửa sổ khi click vào màn hình
+                            timerForm.addEventListener("click", (e) => {
+                                if (e.target.tagName != "INPUT" && e.target.tagName != "BUTTON") {
+                                    header.removeChild(timerForm);
+                                }
+                            });
+                            openAndCloseTimerForm(); //Thêm lại event click vào timerWrapper mới tạo
+                            timerButtonClick(); // Thêm event button
+                        }
+                    });
+                }
+
+                openAndCloseTimerForm();
+            }
+
             openMoreMenu();
             playerButtonsClick();
             songEnd();
@@ -473,6 +577,7 @@ const app = {
             setAndUpdateAudioVolume();
             songClick();
             setSongCurrentTime();
+            setTimer();
         };
 
         render();

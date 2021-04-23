@@ -586,15 +586,27 @@ const app = {
     }
 }
 
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "../data/songs.json", false);
-xhr.addEventListener("load", () => {
-    if (xhr.status === 200) {
-        app.songs = JSON.parse(xhr.responseText);
-        console.log("data received");
-    }
+const data = "../data/songs.json";
 
-});
-xhr.send();
+fetch(data)
+    .then(response => response.json())
+    .then(songs => {
+        app.songs = songs;
+        app.start();
+    })
+    .catch(error => {
+        document.getElementsByTagName("body")[0].innerHTML = "Lỗi!";
+        console.error(error);
+    });
 
-app.start();
+// const xhr = new XMLHttpRequest();
+// xhr.open("GET", "../data/songs.json", false);
+// xhr.addEventListener("load", () => {
+//     if (xhr.status === 200) {
+//         app.songs = JSON.parse(xhr.responseText);
+//         console.log("data received");
+//     }
+
+// });
+// xhr.send();
+

@@ -161,7 +161,6 @@ header .timer-form {
 
 header .timer-form input, header .timer-form button {
   height: 35px;
-  padding: 5px 0 5px 5px;
   border-radius: 0;
   border: 1px solid #7200a1;
   background: #000;
@@ -172,6 +171,7 @@ header .timer-form input, header .timer-form button {
 header .timer-form input {
   width: 150px;
   margin-right: 10px;
+  padding: 5px 0 5px 10px;
 }
 
 header .timer-form input.error {

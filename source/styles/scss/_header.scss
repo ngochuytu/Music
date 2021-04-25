@@ -97,7 +97,6 @@ header{
 
         input, button{
             height: 35px;
-            padding: 5px 0 5px 5px;
             border-radius: 0;
             border: 1px solid $button-bg;
             background: #000;
@@ -108,6 +107,7 @@ header{
         input{
             width: 150px;
             margin-right: 10px;
+            padding: 5px 0 5px 10px;
 
             &.error{
                 border: 1px solid $timer-input-error-border;

@@ -189,8 +189,9 @@ const app = {
                             <i class="fas fa-search"></i>
                         </div>
                         <div class="timer-wrapper">
-                            <i class="far fa-clock"></i>
-                            <div class="timer-handler" id="timerHandler"></div>
+                            <i class="far fa-clock">
+                                <div class="timer-handler" id="timerHandler"></div>
+                            </i>
                         </div>
                     </header>
             `,

@@ -7,9 +7,104 @@ header.sticky{
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 30px;
+
+    @media screen and (max-width: $br-small) {
+        padding: 20px;
+    }
+
+    .menu-wrapper{
+        cursor: pointer;
+        $menu-contents-top-begin: 55px;
+        $menu-contents-top-end: 75px; //Header height - 5px
+
+        &.active{
+            .menu-bars{
+                .menu-bar:nth-of-type(1){
+                    transform: rotate(45deg) translateX(1px);
+                }
+                
+                .menu-bar:nth-of-type(2){
+                    display: none;
+                }
+                
+                .menu-bar:nth-of-type(3){
+                    transform: rotate(-45deg) translateX(1px);
+                }
+            }
+
+            .menu-contents{
+                animation: appear-from-top 250ms forwards linear;
+
+                @keyframes appear-from-top {
+                    to{
+                        visibility: visible;
+                        opacity: 1;
+                        top: $menu-contents-top-end;
+                    }
+                }
+            }
+        }
+
+        &.closed{
+            .menu-contents{
+                animation: hide-to-top 250ms forwards linear;
+
+                @keyframes hide-to-top {
+                    from{
+                        visibility: visible;
+                        opacity: 1;
+                        top: $menu-contents-top-end;
+                    }
+
+                    to{
+                        //Default styling
+                        visibility: 0;
+                        opacity: 0;
+                        top: $menu-contents-top-begin;
+                    }
+                }
+            }
+        }
+
+        .menu-bars{
+            &:hover>.menu-bar{
+                background: $text-hover;
+            }
+
+            .menu-bar{
+                width: 25px;
+                height: 2px;
+                background: #fff;
+            }
+
+            .menu-bar:nth-of-type(2){
+                margin: 5px 0;
+            }
+        }
+
+        .menu-contents{
+            position: absolute;
+            top: $menu-contents-top-begin;
+            left: 0;
+            width: 100%;
+            background: $layout-bg;
+            visibility: hidden;
+            opacity: 0;
+
+            .menu-content{
+                margin-bottom: 15.5px;
+                text-align: center;
+
+                &:hover{
+                    color: $text-hover;
+                }
+            }
+        }
+        
+    }
 
     .search-wrapper{
         display: flex;
@@ -43,11 +138,10 @@ header{
     }
     
     .timer-wrapper{
-        position: absolute;
-        right: 30px; //Main padding
         cursor: pointer;
         font-size: 1.5rem;
         z-index: 999; //On top of Popup
+        position: relative;
 
 
         @media screen and (max-width: $br-small) {

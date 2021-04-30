@@ -34,13 +34,122 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 20px 30px;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 20px;
+  }
+}
+
+header .menu-wrapper {
+  cursor: pointer;
+}
+
+header .menu-wrapper.active .menu-bars .menu-bar:nth-of-type(1) {
+  -webkit-transform: rotate(45deg) translateX(1px);
+          transform: rotate(45deg) translateX(1px);
+}
+
+header .menu-wrapper.active .menu-bars .menu-bar:nth-of-type(2) {
+  display: none;
+}
+
+header .menu-wrapper.active .menu-bars .menu-bar:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg) translateX(1px);
+          transform: rotate(-45deg) translateX(1px);
+}
+
+header .menu-wrapper.active .menu-contents {
+  -webkit-animation: appear-from-top 250ms forwards linear;
+          animation: appear-from-top 250ms forwards linear;
+}
+
+@-webkit-keyframes appear-from-top {
+  to {
+    visibility: visible;
+    opacity: 1;
+    top: 75px;
+  }
+}
+
+@keyframes appear-from-top {
+  to {
+    visibility: visible;
+    opacity: 1;
+    top: 75px;
+  }
+}
+
+header .menu-wrapper.closed .menu-contents {
+  -webkit-animation: hide-to-top 250ms forwards linear;
+          animation: hide-to-top 250ms forwards linear;
+}
+
+@-webkit-keyframes hide-to-top {
+  from {
+    visibility: visible;
+    opacity: 1;
+    top: 75px;
+  }
+  to {
+    visibility: 0;
+    opacity: 0;
+    top: 55px;
+  }
+}
+
+@keyframes hide-to-top {
+  from {
+    visibility: visible;
+    opacity: 1;
+    top: 75px;
+  }
+  to {
+    visibility: 0;
+    opacity: 0;
+    top: 55px;
+  }
+}
+
+header .menu-wrapper .menu-bars:hover > .menu-bar {
+  background: #c662ef;
+}
+
+header .menu-wrapper .menu-bars .menu-bar {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+}
+
+header .menu-wrapper .menu-bars .menu-bar:nth-of-type(2) {
+  margin: 5px 0;
+}
+
+header .menu-wrapper .menu-contents {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background: #170f23;
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .menu-wrapper .menu-contents .menu-content {
+  margin-bottom: 15.5px;
+  text-align: center;
+}
+
+header .menu-wrapper .menu-contents .menu-content:hover {
+  color: #c662ef;
 }
 
 header .search-wrapper {
@@ -93,11 +202,10 @@ header .search-wrapper .fa-search {
 }
 
 header .timer-wrapper {
-  position: absolute;
-  right: 30px;
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 999;
+  position: relative;
 }
 
 @media screen and (max-width: 450px) {
@@ -407,8 +515,20 @@ header .timer-form button:hover {
   }
 }
 
-.playlist__song .song--right > i {
+.playlist__song .song--right .favoriteButton, .playlist__song .song--right .moreButton {
   cursor: pointer;
+}
+
+.playlist__song .song--right .favoriteButton:hover, .playlist__song .song--right .moreButton:hover {
+  color: #c662ef;
+}
+
+.playlist__song .song--right .favoriteButton {
+  margin-right: 5px;
+}
+
+.playlist__song .song--right .favoriteButton.active {
+  color: #c662ef;
 }
 
 .playlist__song .song--right .song-more {

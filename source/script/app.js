@@ -9,6 +9,8 @@ const app = {
     timer: 0,
     searchText: "",
     searchSongs: null,
+    favoriteSongs: null,
+    favoritePlaylist: false,
 
     setCurrentSongID: function (next, previous, repeat, random, selectedID) {
         if (repeat) {
@@ -17,8 +19,8 @@ const app = {
         else if (random) {
             if (this.searchSongs) {
                 while (true) {
-                    let randomSearchSongsIndex = Math.round(Math.random() * this.searchSongs.length - 1);
-                    let newSongID = this.searchSongs[randomSearchSongsIndex].id
+                    let randomSearchSongsIndex = Math.round(Math.random() * (this.searchSongs.length - 1));
+                    let newSongID = this.searchSongs[randomSearchSongsIndex].id;
                     if (this.currentSongID == newSongID)
                         continue;
                     else {
@@ -27,9 +29,25 @@ const app = {
                     }
                 }
             }
+            else if (this.favoritePlaylist) {
+                //Sắp xếp ID tăng dần
+                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                if (favoriteSongsID) {
+                    while (true) {
+                        let randomSongsIndex = Math.round(Math.random() * (favoriteSongsID.length - 1));
+                        let newSongID = favoriteSongsID[randomSongsIndex];
+                        if (this.currentSongID == newSongID)
+                            continue;
+                        else {
+                            this.currentSongID = newSongID;
+                            break;
+                        }
+                    }
+                }
+            }
             else {
                 while (true) {
-                    let randomSongsIndex = Math.round(Math.random() * this.songs.length - 1);
+                    let randomSongsIndex = Math.round(Math.random() * (this.songs.length - 1));
                     let newSongID = this.songs[randomSongsIndex].id;
                     if (this.currentSongID == newSongID)
                         continue;
@@ -53,12 +71,23 @@ const app = {
                 else
                     this.currentSongID = this.searchSongs[currentSearchSongIndex + 1].id;
             }
+            else if (this.favoritePlaylist) {
+                //Sắp xếp ID tăng dần
+                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                const currentFavoriteIndex = favoriteSongsID.indexOf(this.currentSongID);
+                if (favoriteSongsID) {
+                    if (this.currentSongID == favoriteSongsID[favoriteSongsID.length - 1])
+                        this.currentSongID = favoriteSongsID[0];
+                    else
+                        this.currentSongID = favoriteSongsID[currentFavoriteIndex + 1];
+                }
+            }
             else {
                 //ID trùng thứ tự bài
                 if (this.currentSongID == this.songs.length - 1)
                     this.currentSongID = this.songs[0].id;
                 else
-                    this.currentSongID = this.songs[this.currentSongID + 1].id;
+                    this.currentSongID = this.songs[+this.currentSongID + 1].id;
             }
         }
         else if (previous) {
@@ -67,10 +96,21 @@ const app = {
                     return searchSong == this.songs[this.currentSongID];
                 });
 
-                if (this.currentSongID == 0)
+                if (this.currentSongID == this.searchSongs[0].id)
                     this.currentSongID = this.searchSongs[this.searchSongs.length - 1].id;
                 else
                     this.currentSongID = this.searchSongs[currentSearchSongIndex - 1].id;
+            }
+            else if (this.favoritePlaylist) {
+                //Sắp xếp ID tăng dần
+                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                const currentFavoriteIndex = favoriteSongsID.indexOf(this.currentSongID);
+                if (favoriteSongsID) {
+                    if (this.currentSongID == favoriteSongsID[0])
+                        this.currentSongID = favoriteSongsID[favoriteSongsID.length - 1];
+                    else
+                        this.currentSongID = favoriteSongsID[currentFavoriteIndex - 1];
+                }
             }
             else {
                 if (this.currentSongID == 0)
@@ -132,16 +172,27 @@ const app = {
             title: `Music - ${this.getCurrentSong().name}`,
 
             header: `
-                <header class="sticky">
-                    <div class="search-wrapper">
-                        <input type="text" placeholder="Nhập tên bài hát" id="searchInput" value="${this.searchText}">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="timer-wrapper">
-                        <i class="far fa-clock"></i>
-                        <div class="timer-handler" id="timerHandler"></div>
-                    </div>
-                </header>
+                    <header class="sticky">
+                        <div class="menu-wrapper">
+                            <div class="menu-bars">
+                                <div class="menu-bar"></div>
+                                <div class="menu-bar"></div>
+                                <div class="menu-bar"></div>
+                            </div>
+                            <div class="menu-contents">
+                                <div class="menu-content" id="normalPlaylist">Danh sách nhạc</div>
+                                <div class="menu-content" id="favoritePlaylist">Danh sách yêu thích</div>
+                            </div>
+                        </div>
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Nhập tên bài hát" id="searchInput" value="${this.searchText}">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="timer-wrapper">
+                            <i class="far fa-clock"></i>
+                            <div class="timer-handler" id="timerHandler"></div>
+                        </div>
+                    </header>
             `,
 
             playlistHeader: `
@@ -158,90 +209,33 @@ const app = {
             `,
 
             playlist: () => {
-                if (this.searchSongs) {
-                    playlist = this.searchSongs.map(searchSong => {
-                        if (searchSong === this.getCurrentSong()) {
-                            return `
-                                <div id="${searchSong.id}" class="playlist__song playing">
-                                    <div class="song--left">
-                                        <div class="song-image">
-                                            <img src=${searchSong.thumbnail_desktop} alt="">
-                                            <i class="fas fa-play show"></i>
-                                        </div>
-                                        <div class="song-information">
-                                            <p class="song-name">${searchSong.name}</p>
-                                            <p class="singer-name">${searchSong.singer}</p>
-                                        </div>
-                                    </div>
-                                    <div class="song--middle">
-                                        <p class="song-duration">${searchSong.duration}</p>
-                                    </div>
-                                    <div class="song--right">
-                                        <i class="fas fa-ellipsis-h moreButton"></i>
-                                        <div class="song-more hidden">
-                                            <div class="more more-download">
-                                                <a href=${searchSong.source} download>
-                                                    <i class="fas fa-download">Tải xuống</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `
-                        }
-                        else {
-                            return `
-                                <div id="${searchSong.id}" class="playlist__song">
-                                    <div class="song--left">
-                                        <div class="song-image">
-                                            <img src=${searchSong.thumbnail_desktop} alt="">
-                                            <i class="fas fa-play show"></i>
-                                        </div>
-                                        <div class="song-information">
-                                            <p class="song-name">${searchSong.name}</p>
-                                            <p class="singer-name">${searchSong.singer}</p>
-                                        </div>
-                                    </div>
-                                    <div class="song--middle">
-                                        <p class="song-duration">${searchSong.duration}</p>
-                                    </div>
-                                    <div class="song--right">
-                                        <i class="fas fa-ellipsis-h moreButton"></i>
-                                        <div class="song-more hidden">
-                                            <div class="more more-download">
-                                                <a href=${searchSong.source} download>
-                                                    <i class="fas fa-download">Tải xuống</i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            `
-                        }
-                    });
-                } else {
-                    playlist = this.songs.map(song => {
-                        if (song === this.getCurrentSong()) {
-                            return `
-                                    <div id="${song.id}" class="playlist__song playing">
+                if (this.favoritePlaylist) {
+                    const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+
+                    if (this.searchSongs) {
+                        playlist = this.searchSongs.map(searchSong => {
+                            if (searchSong === this.getCurrentSong()) {
+                                return `
+                                    <div id="${searchSong.id}" class="playlist__song playing">
                                         <div class="song--left">
                                             <div class="song-image">
-                                                <img src=${song.thumbnail_desktop} alt="">
+                                                <img src=${searchSong.thumbnail_desktop} alt="">
                                                 <i class="fas fa-play show"></i>
                                             </div>
                                             <div class="song-information">
-                                                <p class="song-name">${song.name}</p>
-                                                <p class="singer-name">${song.singer}</p>
+                                                <p class="song-name">${searchSong.name}</p>
+                                                <p class="singer-name">${searchSong.singer}</p>
                                             </div>
                                         </div>
                                         <div class="song--middle">
-                                            <p class="song-duration">${song.duration}</p>
+                                            <p class="song-duration">${searchSong.duration}</p>
                                         </div>
                                         <div class="song--right">
+                                            <i class="far fa-heart favoriteButton"></i>
                                             <i class="fas fa-ellipsis-h moreButton"></i>
                                             <div class="song-more hidden">
                                                 <div class="more more-download">
-                                                    <a href=${song.source} download>
+                                                    <a href=${searchSong.source} download>
                                                         <i class="fas fa-download">Tải xuống</i>
                                                     </a>
                                                 </div>
@@ -249,28 +243,29 @@ const app = {
                                         </div>
                                     </div>
                                 `
-                        }
-                        else {
-                            return `
-                                    <div id="${song.id}" class="playlist__song">
+                            }
+                            else {
+                                return `
+                                    <div id="${searchSong.id}" class="playlist__song">
                                         <div class="song--left">
                                             <div class="song-image">
-                                                <img src=${song.thumbnail_desktop} alt="">
+                                                <img src=${searchSong.thumbnail_desktop} alt="">
                                                 <i class="fas fa-play show"></i>
                                             </div>
                                             <div class="song-information">
-                                                <p class="song-name">${song.name}</p>
-                                                <p class="singer-name">${song.singer}</p>
+                                                <p class="song-name">${searchSong.name}</p>
+                                                <p class="singer-name">${searchSong.singer}</p>
                                             </div>
                                         </div>
                                         <div class="song--middle">
-                                            <p class="song-duration">${song.duration}</p>
+                                            <p class="song-duration">${searchSong.duration}</p>
                                         </div>
                                         <div class="song--right">
+                                            <i class="far fa-heart favoriteButton"></i>
                                             <i class="fas fa-ellipsis-h moreButton"></i>
                                             <div class="song-more hidden">
                                                 <div class="more more-download">
-                                                    <a href=${song.source} download>
+                                                    <a href=${searchSong.source} download>
                                                         <i class="fas fa-download">Tải xuống</i>
                                                     </a>
                                                 </div>
@@ -278,8 +273,207 @@ const app = {
                                         </div>
                                     </div>
                                 `
-                        }
-                    });
+                            }
+                        });
+                    }
+                    else {
+                        playlist = this.songs.map(song => {
+                            for (let i = 0; i < favoriteSongsID.length; ++i) {
+                                if (song.id == favoriteSongsID[i]) {
+                                    if (song == this.getCurrentSong()) {
+                                        return `
+                                            <div id="${song.id}" class="playlist__song playing">
+                                                <div class="song--left">
+                                                    <div class="song-image">
+                                                        <img src=${song.thumbnail_desktop} alt="">
+                                                        <i class="fas fa-play show"></i>
+                                                    </div>
+                                                    <div class="song-information">
+                                                        <p class="song-name">${song.name}</p>
+                                                        <p class="singer-name">${song.singer}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="song--middle">
+                                                    <p class="song-duration">${song.duration}</p>
+                                                </div>
+                                                <div class="song--right">
+                                                    <i class="far fa-heart favoriteButton"></i>
+                                                    <i class="fas fa-ellipsis-h moreButton"></i>
+                                                    <div class="song-more hidden">
+                                                        <div class="more more-download">
+                                                            <a href=${song.source} download>
+                                                                <i class="fas fa-download">Tải xuống</i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        `
+                                    }
+                                    else {
+                                        return `
+                                                <div id="${song.id}" class="playlist__song">
+                                                    <div class="song--left">
+                                                        <div class="song-image">
+                                                            <img src=${song.thumbnail_desktop} alt="">
+                                                            <i class="fas fa-play show"></i>
+                                                        </div>
+                                                        <div class="song-information">
+                                                            <p class="song-name">${song.name}</p>
+                                                            <p class="singer-name">${song.singer}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="song--middle">
+                                                        <p class="song-duration">${song.duration}</p>
+                                                    </div>
+                                                    <div class="song--right">
+                                                        <i class="far fa-heart favoriteButton"></i>
+                                                        <i class="fas fa-ellipsis-h moreButton"></i>
+                                                        <div class="song-more hidden">
+                                                            <div class="more more-download">
+                                                                <a href=${song.source} download>
+                                                                    <i class="fas fa-download">Tải xuống</i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            `
+                                    }
+                                }
+                            }
+                        });
+                    }
+                }
+                else {
+                    if (this.searchSongs) {
+                        playlist = this.searchSongs.map(searchSong => {
+                            if (searchSong === this.getCurrentSong()) {
+                                return `
+                                    <div id="${searchSong.id}" class="playlist__song playing">
+                                        <div class="song--left">
+                                            <div class="song-image">
+                                                <img src=${searchSong.thumbnail_desktop} alt="">
+                                                <i class="fas fa-play show"></i>
+                                            </div>
+                                            <div class="song-information">
+                                                <p class="song-name">${searchSong.name}</p>
+                                                <p class="singer-name">${searchSong.singer}</p>
+                                            </div>
+                                        </div>
+                                        <div class="song--middle">
+                                            <p class="song-duration">${searchSong.duration}</p>
+                                        </div>
+                                        <div class="song--right">
+                                            <i class="far fa-heart favoriteButton"></i>
+                                            <i class="fas fa-ellipsis-h moreButton"></i>
+                                            <div class="song-more hidden">
+                                                <div class="more more-download">
+                                                    <a href=${searchSong.source} download>
+                                                        <i class="fas fa-download">Tải xuống</i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `
+                            }
+                            else {
+                                return `
+                                    <div id="${searchSong.id}" class="playlist__song">
+                                        <div class="song--left">
+                                            <div class="song-image">
+                                                <img src=${searchSong.thumbnail_desktop} alt="">
+                                                <i class="fas fa-play show"></i>
+                                            </div>
+                                            <div class="song-information">
+                                                <p class="song-name">${searchSong.name}</p>
+                                                <p class="singer-name">${searchSong.singer}</p>
+                                            </div>
+                                        </div>
+                                        <div class="song--middle">
+                                            <p class="song-duration">${searchSong.duration}</p>
+                                        </div>
+                                        <div class="song--right">
+                                            <i class="far fa-heart favoriteButton"></i>
+                                            <i class="fas fa-ellipsis-h moreButton"></i>
+                                            <div class="song-more hidden">
+                                                <div class="more more-download">
+                                                    <a href=${searchSong.source} download>
+                                                        <i class="fas fa-download">Tải xuống</i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `
+                            }
+                        });
+                    }
+                    else {
+                        playlist = this.songs.map(song => {
+                            if (song === this.getCurrentSong()) {
+                                return `
+                                        <div id="${song.id}" class="playlist__song playing">
+                                            <div class="song--left">
+                                                <div class="song-image">
+                                                    <img src=${song.thumbnail_desktop} alt="">
+                                                    <i class="fas fa-play show"></i>
+                                                </div>
+                                                <div class="song-information">
+                                                    <p class="song-name">${song.name}</p>
+                                                    <p class="singer-name">${song.singer}</p>
+                                                </div>
+                                            </div>
+                                            <div class="song--middle">
+                                                <p class="song-duration">${song.duration}</p>
+                                            </div>
+                                            <div class="song--right">
+                                                <i class="far fa-heart favoriteButton"></i>
+                                                <i class="fas fa-ellipsis-h moreButton"></i>
+                                                <div class="song-more hidden">
+                                                    <div class="more more-download">
+                                                        <a href=${song.source} download>
+                                                            <i class="fas fa-download">Tải xuống</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `
+                            }
+                            else {
+                                return `
+                                        <div id="${song.id}" class="playlist__song">
+                                            <div class="song--left">
+                                                <div class="song-image">
+                                                    <img src=${song.thumbnail_desktop} alt="">
+                                                    <i class="fas fa-play show"></i>
+                                                </div>
+                                                <div class="song-information">
+                                                    <p class="song-name">${song.name}</p>
+                                                    <p class="singer-name">${song.singer}</p>
+                                                </div>
+                                            </div>
+                                            <div class="song--middle">
+                                                <p class="song-duration">${song.duration}</p>
+                                            </div>
+                                            <div class="song--right">
+                                                <i class="far fa-heart favoriteButton"></i>
+                                                <i class="fas fa-ellipsis-h moreButton"></i>
+                                                <div class="song-more hidden">
+                                                    <div class="more more-download">
+                                                        <a href=${song.source} download>
+                                                            <i class="fas fa-download">Tải xuống</i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    `
+                            }
+                        });
+                    }
                 }
 
                 return playlist.join("");
@@ -320,7 +514,7 @@ const app = {
             `
         }
 
-        const render = () => {
+        const renderAll = () => {
             document.title = `${sections.title}`;
 
             document.body.innerHTML = `
@@ -333,13 +527,27 @@ const app = {
             `;
         };
 
-        const renderSearch = () => {
+        const renderPlaylist = () => {
             document.getElementById("playlist").innerHTML = `
                 <div class="playlist" id="playlist">${sections.playlist()}</div>
             `
         }
 
         const stylingHandler = () => {
+            const stylingHeaderMenu = e => {
+                const menuWrapper = document.querySelector(".menu-wrapper");
+                if (e.target.classList.contains("menu-bars") || e.target.classList.contains("menu-bar") || e.target.classList.contains("menu-content")) { //Chỉ click vào menu bar hoặc đổi playlist
+                    if (menuWrapper.classList.contains("active")) {
+                        menuWrapper.classList.add("closed");
+                        menuWrapper.classList.remove("active");
+                    }
+                    else {
+                        menuWrapper.classList.add("active");
+                        menuWrapper.classList.remove("closed");
+                    }
+                }
+            }
+
             const stylingRepeatAndRandomButton = () => {
                 const repeatButton = document.getElementById("repeatButton");
                 const randomButton = document.getElementById("randomButton");
@@ -395,14 +603,110 @@ const app = {
                 }
             }
 
+            const stylingFavoriteButtons = () => {
+                const favoriteSongsIDArray = localStorage.getItem("favoriteSongsID")?.split(",");
+
+                const favoriteButtons = document.querySelectorAll(".favoriteButton");
+                favoriteButtons.forEach(favoriteButton => {
+                    favoriteButton.classList.remove("active");
+
+                    const favoriteSongID = favoriteButton.parentElement.parentElement.id;
+                    favoriteSongsIDArray?.forEach(ID => {
+                        if (favoriteSongID == ID)
+                            favoriteButton.classList.add("active");
+                    });
+                });
+            }
+
             stylingRepeatAndRandomButton();
             togglingPlayButton();
             animatingSongCDs();
             stylingTimer();
+            stylingFavoriteButtons();
+
+            //Những styling phải có event truyền vào để xác định target
+            return {
+                stylingHeaderMenu: stylingHeaderMenu,
+
+            };
         }
 
         const eventHandler = () => {
-            const openMoreMenu = () => {
+            const headerMenuClick = () => {
+                const menuWrapper = document.querySelector(".menu-wrapper");
+                menuWrapper.addEventListener("click", e => {
+                    stylingHandler().stylingHeaderMenu(e);
+                });
+            }
+
+            const headerMenuContentsClick = () => {
+                const afterClick = (e) => {
+                    //re-render header
+                    this.searchSongs = null;
+                    this.searchText = ""; document.getElementById("searchInput").value = this.searchText;
+
+                    //re-render playlist
+                    renderPlaylist();
+
+                    //Css sau khi re-render
+                    stylingHandler();
+                    stylingHandler().stylingHeaderMenu(e);
+                    e.stopPropagation(); //Ngăn k cho menu mở lại (nhận click 2 lần)
+
+                    // Add lại event playlist sau khi re-render
+                    playlistMoreButtonClick();
+                    songClick();
+                    favoriteButtonClick();
+                }
+
+                const normalPlaylistClick = () => {
+                    const normalPlaylist = document.getElementById("normalPlaylist");
+                    normalPlaylist.addEventListener("click", e => {
+                        this.favoritePlaylist = false;
+                        afterClick(e);
+                    });
+                }
+
+                const favoritePlaylistClick = () => {
+                    const favoritePlaylist = document.getElementById("favoritePlaylist");
+                    favoritePlaylist.addEventListener("click", e => {
+                        this.favoritePlaylist = true;
+                        afterClick(e);
+                    });
+                }
+
+                normalPlaylistClick();
+                favoritePlaylistClick();
+            }
+
+            const favoriteButtonClick = () => {
+                const favoriteButtons = document.querySelectorAll(".favoriteButton");
+                favoriteButtons.forEach(favoriteButton => {
+                    favoriteButton.addEventListener("click", () => {
+                        const clickedFavoriteSongID = favoriteButton.parentElement.parentElement.id;
+                        const favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                        if (favoriteSongsID) {
+                            const favoriteSongsIDArray = favoriteSongsID.split(",");
+
+                            if (favoriteSongsIDArray.includes(clickedFavoriteSongID)) {
+                                let clickedIDInArray = favoriteSongsIDArray.indexOf(clickedFavoriteSongID);
+                                favoriteSongsIDArray.splice(clickedIDInArray, 1); //Xoá ID trùng
+                                localStorage.setItem("favoriteSongsID", favoriteSongsIDArray);
+                            }
+                            else {
+                                let newFavoriteSongsID = `${localStorage.getItem("favoriteSongsID")},${clickedFavoriteSongID}`;
+                                localStorage.setItem("favoriteSongsID", newFavoriteSongsID);
+                            }
+                        }
+                        else {
+                            localStorage.setItem("favoriteSongsID", clickedFavoriteSongID);
+                        }
+                        stylingHandler();
+                    });
+                });
+            }
+
+            const playlistMoreButtonClick = () => {
                 const moreButtons = document.querySelectorAll(".moreButton");
                 const moreMenus = document.querySelectorAll(".song-more");
                 let openingMenuIndex = -1;
@@ -550,7 +854,6 @@ const app = {
                     audioSlider.value = audioCurrentTime;
                     const minutes = Math.floor(audioCurrentTime / 60);
                     const seconds = Math.round(audioCurrentTime - 60 * minutes);
-                    console.log(minutes, seconds);
                     if (seconds >= 10) {
                         displayCurrentTime.innerHTML = `0${minutes}:${seconds}`;
                     } else {
@@ -647,7 +950,7 @@ const app = {
 
                     timerButton.addEventListener("click", () => {
                         const timerInput = document.getElementById("timerInput");
-                        timeValidation(timerInput.value, timerInput);
+                        timeValidation(Math.round(timerInput.value), timerInput);
                     });
                 }
 
@@ -677,8 +980,13 @@ const app = {
                                     header.removeChild(timerForm);
                                 }
                             });
-                            openAndCloseTimerForm(); //Thêm lại event click vào timerWrapper mới tạo
-                            timerButtonClick(); // Thêm event button
+
+                            //Thêm lại event cho header
+                            headerMenuClick();
+                            headerMenuContentsClick();
+                            openAndCloseTimerForm();
+                            timerButtonClick();
+                            searchSongs();
                         }
                     });
                 }
@@ -690,21 +998,46 @@ const app = {
                 const searchInput = document.getElementById("searchInput");
                 searchInput.addEventListener("input", () => {
                     const searchValue = searchInput.value;
-
-                    this.searchSongs = this.songs.filter(song => {
-                        return song.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1;
-                    });
+                    if (!searchValue)
+                        this.searchSongs = null;
+                    else {
+                        if (this.favoritePlaylist) {
+                            const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                            console.log(favoriteSongsID);
+                            if (favoriteSongsID) {
+                                this.searchSongs = this.songs.filter(song => {
+                                    for (let i = 0; i < favoriteSongsID.length; ++i) {
+                                        if (song.id == favoriteSongsID[i]) {
+                                            if (song.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1) {
+                                                return song;
+                                            }
+                                        }
+                                    }
+                                });
+                            }
+                        }
+                        else {
+                            this.searchSongs = this.songs.filter(song => {
+                                return song.name.toLowerCase().indexOf(searchValue.toLowerCase()) != -1;
+                            });
+                        }
+                    }
 
                     this.searchText = searchValue;
-                    renderSearch();
+                    renderPlaylist();
                     stylingHandler(); //Css sau khi re-render
                     // Add lại event playlist sau khi re-render
-                    openMoreMenu();
+                    playlistMoreButtonClick();
                     songClick();
+                    favoriteButtonClick();
+
                 });
             }
 
-            openMoreMenu();
+            headerMenuClick();
+            headerMenuContentsClick();
+            favoriteButtonClick();
+            playlistMoreButtonClick();
             playerButtonsClick();
             songEnd();
             updateAudioSliderAndCurrentTime();
@@ -715,7 +1048,7 @@ const app = {
             searchSongs();
         };
 
-        render();
+        renderAll();
         stylingHandler();
         eventHandler();
     }

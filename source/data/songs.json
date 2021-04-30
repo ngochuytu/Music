@@ -1368,5 +1368,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/TuNgayEmDen_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/TuNgayEmDen_Mobile.jpg",
         "updated": "03/04/2021"
+    },
+    {
+        "id": 137,
+        "name": "Chuyện",
+        "singer": "Thuỳ Chi",
+        "source": "../../assets/songs/Chuyen.mp3",
+        "duration": "04:26",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Chuyen_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Chuyen_Mobile.jpg",
+        "updated": "01/05/2021"
     }
 ]

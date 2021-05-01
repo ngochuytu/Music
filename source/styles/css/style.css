@@ -123,6 +123,12 @@ header .menu-wrapper .menu-bars:hover > .menu-bar {
   background: #c662ef;
 }
 
+@media screen and (max-width: 600px) {
+  header .menu-wrapper .menu-bars:hover > .menu-bar {
+    background: #fff;
+  }
+}
+
 header .menu-wrapper .menu-bars .menu-bar {
   width: 25px;
   height: 2px;
@@ -150,6 +156,12 @@ header .menu-wrapper .menu-contents .menu-content {
 
 header .menu-wrapper .menu-contents .menu-content:hover {
   color: #c662ef;
+}
+
+@media screen and (max-width: 600px) {
+  header .menu-wrapper .menu-contents .menu-content:hover {
+    color: #fff;
+  }
 }
 
 header .search-wrapper {
@@ -221,6 +233,12 @@ header .timer-wrapper i:hover::before, header .timer-wrapper i.active {
   color: #c662ef;
 }
 
+@media screen and (max-width: 600px) {
+  header .timer-wrapper i:hover::before {
+    color: #fff;
+  }
+}
+
 header .timer-wrapper i .timer-handler {
   position: absolute;
   right: -10px;
@@ -270,7 +288,8 @@ header .timer-form {
   cursor: pointer;
 }
 
-header .timer-form input, header .timer-form button {
+header .timer-form input,
+header .timer-form button {
   height: 35px;
   border-radius: 0;
   border: 1px solid #7200a1;
@@ -314,6 +333,12 @@ header .timer-form button {
 
 header .timer-form button:hover {
   background: #7200a1;
+}
+
+@media screen and (max-width: 600px) {
+  header .timer-form button:hover {
+    background: inherit;
+  }
 }
 
 .main {
@@ -414,6 +439,18 @@ header .timer-form button:hover {
 .playlist__song.playing .song--left .song-image i, .playlist__song:hover .song--left .song-image i {
   display: initial;
   color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .playlist__song:hover {
+    background: none;
+  }
+  .playlist__song:hover .song--left .song-image img {
+    opacity: initial;
+  }
+  .playlist__song:hover .song--left .song-image i {
+    display: none;
+  }
 }
 
 .playlist__song .song--left,
@@ -518,12 +555,21 @@ header .timer-form button:hover {
   }
 }
 
-.playlist__song .song--right .favoriteButton, .playlist__song .song--right .moreButton {
+.playlist__song .song--right .favoriteButton,
+.playlist__song .song--right .moreButton {
   cursor: pointer;
 }
 
-.playlist__song .song--right .favoriteButton:hover, .playlist__song .song--right .moreButton:hover {
+.playlist__song .song--right .favoriteButton:hover,
+.playlist__song .song--right .moreButton:hover {
   color: #c662ef;
+}
+
+@media screen and (max-width: 600px) {
+  .playlist__song .song--right .favoriteButton:hover,
+  .playlist__song .song--right .moreButton:hover {
+    color: inherit;
+  }
 }
 
 .playlist__song .song--right .favoriteButton {
@@ -532,6 +578,13 @@ header .timer-form button:hover {
 
 .playlist__song .song--right .favoriteButton.active {
   color: #c662ef;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .playlist__song .song--right .favoriteButton.active {
+    color: inherit;
+  }
 }
 
 .playlist__song .song--right .song-more {

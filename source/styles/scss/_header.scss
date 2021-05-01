@@ -1,11 +1,11 @@
-header.sticky{
+header.sticky {
     position: sticky;
     top: 0;
     background: $layout-bg;
     z-index: 999;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,32 +14,27 @@ header{
     @media screen and (max-width: $br-small) {
         padding: 20px;
     }
-
-    .menu-wrapper{
+    .menu-wrapper {
         cursor: pointer;
         $menu-contents-top-begin: 55px;
         $menu-contents-top-end: 75px; //Header height - 5px
-
-        &.active{
-            .menu-bars{
-                .menu-bar:nth-of-type(1){
+        &.active {
+            .menu-bars {
+                .menu-bar:nth-of-type(1) {
                     transform: rotate(45deg) translateX(1px);
                 }
-                
-                .menu-bar:nth-of-type(2){
+                .menu-bar:nth-of-type(2) {
                     display: none;
                 }
-                
-                .menu-bar:nth-of-type(3){
+                .menu-bar:nth-of-type(3) {
                     transform: rotate(-45deg) translateX(1px);
                 }
             }
-
-            .menu-contents{
+            .menu-contents {
                 animation: appear-from-top 250ms forwards linear;
 
                 @keyframes appear-from-top {
-                    to{
+                    to {
                         visibility: visible;
                         opacity: 1;
                         top: $menu-contents-top-end;
@@ -47,19 +42,17 @@ header{
                 }
             }
         }
-
-        &.closed{
-            .menu-contents{
+        &.closed {
+            .menu-contents {
                 animation: hide-to-top 250ms forwards linear;
 
                 @keyframes hide-to-top {
-                    from{
+                    from {
                         visibility: visible;
                         opacity: 1;
                         top: $menu-contents-top-end;
                     }
-
-                    to{
+                    to {
                         //Default styling
                         visibility: 0;
                         opacity: 0;
@@ -68,24 +61,24 @@ header{
                 }
             }
         }
-
-        .menu-bars{
-            &:hover>.menu-bar{
+        .menu-bars {
+            &:hover>.menu-bar {
                 background: $text-hover;
+                //Remove hover on tablet and mobile
+                @media screen and (max-width: $br-medium) {
+                    background: #fff;
+                }
             }
-
-            .menu-bar{
+            .menu-bar {
                 width: 25px;
                 height: 2px;
                 background: #fff;
             }
-
-            .menu-bar:nth-of-type(2){
+            .menu-bar:nth-of-type(2) {
                 margin: 5px 0;
             }
         }
-
-        .menu-contents{
+        .menu-contents {
             position: absolute;
             top: $menu-contents-top-begin;
             left: 0;
@@ -93,31 +86,30 @@ header{
             background: $layout-bg;
             visibility: hidden;
             opacity: 0;
-
-            .menu-content{
+            .menu-content {
                 margin-bottom: 15.5px;
                 text-align: center;
-
-                &:hover{
+                &:hover {
                     color: $text-hover;
+                    //Remove hover on tablet and mobile
+                    @media screen and (max-width: $br-medium) {
+                        color: #fff;
+                    }
                 }
             }
         }
-        
     }
-
-    .search-wrapper{
+    .search-wrapper {
         display: flex;
         align-items: center;
         position: relative;
         width: 70%;
         max-width: 450px;
-        
+
         @media screen and (max-width: $br-small) {
             width: 60%;
         }
-
-        input{
+        input {
             width: 100%;
             height: 35px;
             border-radius: 999px;
@@ -125,37 +117,38 @@ header{
             border: none;
             background: $light-bg;
             padding: 0 20px 0 35px;
-            
-            &, &::placeholder{
+            &,
+            &::placeholder {
                 color: $search-text;
             }
         }
-
-        .fa-search{
+        .fa-search {
             position: absolute;
             left: 10px;
         }
     }
-    
-    .timer-wrapper{
+    .timer-wrapper {
         cursor: pointer;
         font-size: 1.5rem;
         z-index: 999; //On top of Popup
 
-
         @media screen and (max-width: $br-small) {
             right: 20px;
         }
-
-        i{
+        i {
             position: relative;
-
+            
             &:hover::before,
-            &.active{
+            &.active {
                 color: $text-hover;
             }
-
-            .timer-handler{
+            &:hover::before {
+                //Remove hover on tablet and mobile
+                @media screen and (max-width: $br-medium) {
+                    color: #fff;
+                }
+            }
+            .timer-handler {
                 position: absolute;
                 right: -10px;
                 top: -10px;
@@ -168,29 +161,27 @@ header{
                 justify-content: center;
                 align-items: center;
                 display: none;
-                
-                &.active{
+                &.active {
                     display: flex;
                 }
             }
         }
     }
-
-    .timer-form{
+    .timer-form {
         position: fixed;
         width: 100vw;
         height: 100vh;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         padding: 20px;
         background: $timer-form-bg;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-
-        input, button{
+        input,
+        button {
             height: 35px;
             border-radius: 0;
             border: 1px solid $button-bg;
@@ -198,28 +189,27 @@ header{
             outline: none;
             color: #fff;
         }
-
-        input{
+        input {
             width: 150px;
             margin-right: 10px;
             padding: 5px 0 5px 10px;
-
-            &.error{
+            &.error {
                 border: 1px solid $timer-input-error-border;
             }
-
-            &::placeholder{
+            &::placeholder {
                 color: #fff;
             }
         }
-
-        button{
+        button {
             padding: 5px;
             cursor: pointer;
             transition: background 200ms linear;
-
-            &:hover{
+            &:hover {
                 background: $button-bg;
+                //Remove hover on tablet and mobile
+                @media screen and (max-width: $br-medium) {
+                    background: inherit;
+                }
             }
         }
     }

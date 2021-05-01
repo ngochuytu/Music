@@ -1,4 +1,4 @@
-.player{
+.player {
     background: $player-bg;
     border-top: 1px solid $player-border;
     position: fixed;
@@ -12,15 +12,13 @@
     @media screen and (max-width: $br-medium) {
         justify-content: center;
     }
-    
-    &--left{
+    &--left {
         flex: 0 1 40%;
         display: flex;
         align-items: center;
         overflow: hidden;
         white-space: nowrap;
-
-        @media screen and (max-width: $br-medium-big){
+        @media screen and (max-width: $br-medium-big) {
             flex: 0 1 35%;
         }
 
@@ -28,60 +26,52 @@
             all: initial;
             display: none;
         }
-        
-        .song-image{
+        .song-image {
             margin-right: 10px;
-    
-            img{
+            img {
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
             }
         }
-    
-        .singer-name{
+        .singer-name {
             color: $text-secondary;
             font-size: .85rem;
         }
     }
-
-    &--middle{
+    &--middle {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0 20px;
-
-        .player-control--top{
+        .player-control--top {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             margin-bottom: 10px;
-
-            i{
+            i {
                 cursor: pointer;
                 position: relative;
                 font-size: 16px;
-
-                &.hidden{
+                &.hidden {
                     display: none;
                 }
-                &.show{
+                &.show {
                     display: initial;
                 }
 
                 &#repeatButton.active,
-                &#randomButton.active{
+                &#randomButton.active {
                     color: $text-hover;
                 }
 
                 //Icon
-                &::before{
+                &::before {
                     display: inline-block;
                     position: relative;
                 }
-
-                &::after{
+                &::after {
                     content: "";
                     position: absolute;
                     width: 30px;
@@ -89,71 +79,60 @@
                     border-radius: 50%;
                     top: 0;
                     left: 0;
-                    transform: translate(-25%,-25%);
+                    transform: translate(-25%, -25%);
                     background: $light-bg;
                     opacity: 0;
                     visibility: hidden;
                 }
 
                 &#playButton,
-                &#pauseButton{
-
-                    &::after{
+                &#pauseButton {
+                    &::after {
                         border: 1px solid #fff;
                         opacity: 1;
                         visibility: visible;
                         background: none;
                     }
-
-                    &:hover{
+                    &:hover {
                         color: $text-hover;
-
-                        &::after{
+                        &::after {
                             border-color: $text-hover;
                         }
                     }
                 }
-
-                &#playButton::before{
+                &#playButton::before {
                     left: 2px;
                 }
 
                 &#pauseButton::before,
                 &#previousButton::before,
-                &#nextButton::before{
+                &#nextButton::before {
                     left: 1px;
                 }
-
-                &:hover{
-
-                    &::after{
+                &:hover {
+                    &::after {
                         opacity: 1;
                         visibility: visible;
                     }
                 }
             }
         }
-
-        .player-control--bottom{
+        .player-control--bottom {
             display: flex;
             align-items: center;
-
-            span{
+            span {
                 color: $search-text;
             }
-
-            .current-time{
+            .current-time {
                 min-width: 50px;
                 text-align: right;
             }
-
-            input[type="range"]{
+            input[type="range"] {
                 margin: 0 10px;
             }
         }
     }
-
-    &--right{
+    &--right {
         flex: 1;
         display: flex;
         align-items: center;
@@ -163,8 +142,7 @@
             all: initial;
             display: none;
         }
-
-        i{
+        i {
             margin-right: 10px;
         }
     }

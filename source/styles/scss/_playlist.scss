@@ -1,117 +1,122 @@
-.playlist{
+.playlist {
     flex: 1 1 60%;
-    
-    &__song{
+    &__song {
         display: flex;
         align-items: center;
         border-bottom: 1px solid $playlist-border;
         border-radius: 5px;
         padding: 10px;
         cursor: pointer;
-
-        &.playing, &:hover{
+        &.playing,
+        &:hover {
             background: $light-bg;
-
-            .song--left .song-image{
-                img{
+            .song--left .song-image {
+                img {
                     opacity: .6;
                 }
-
-                i{
+                i {
                     display: initial;
                     color: #fff;
                 }
             }
         }
-
+        &:hover {
+            //Remove hover on tablet and mobile
+            @media screen and (max-width: $br-medium) {
+                background: none;
+                .song--left .song-image {
+                    img {
+                        opacity: initial;
+                    }
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
         .song--left,
         .song--middle,
-        .song--right{
+        .song--right {
             color: $text-secondary;
         }
-
-        .song--left{
+        .song--left {
             flex: 0 1 50%;
             display: flex;
             align-items: center;
-
-            @media screen and (max-width: $br-big)  {
+            @media screen and (max-width: $br-big) {
                 flex: 1;
             }
-
+            
             @media screen and (max-width: $br-medium) {
                 flex: 0 1 75%;
             }
-
-            .song-image{
+            .song-image {
                 margin-right: 10px;
                 position: relative;
-
-                img{
+                img {
                     width: 50px;
                     height: 40px;
                     border-radius: 5px;
                 }
-
-                i{
+                i {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                     display: none;
                 }
             }
-
-            .song-information{
-                .song-name{
+            .song-information {
+                .song-name {
                     font-size: .95rem;
                     color: $text-primary;
                 }
-                .singer-name{
+                .singer-name {
                     font-size: .8rem;
-                }    
+                }
             }
-        } 
-
-        .song--middle{
+        }
+        .song--middle {
             font-size: .85rem;
-
-            @media screen and (max-width: $br-big)  {
+            @media screen and (max-width: $br-big) {
                 display: none;
             }
         }
-        
-        .song--right{
+        .song--right {
             flex: 1;
             display: flex;
             justify-content: flex-end;
             position: relative;
-
-            @media screen and (max-width: $br-big)  {
+            @media screen and (max-width: $br-big) {
                 flex: 0;
             }
 
             @media screen and (max-width: $br-medium) {
                 flex: 1;
             }
-
-            .favoriteButton, .moreButton{
+            .favoriteButton,
+            .moreButton {
                 cursor: pointer;
-
-                &:hover{
+                &:hover {
                     color: $text-hover;
+                    //Remove hover on tablet and mobile
+                    @media screen and (max-width: $br-medium) {
+                        color: inherit;
+                    }
                 }
             }
-            
-            .favoriteButton{
+            .favoriteButton {
                 margin-right: 5px;
-                
-                &.active{
+                &.active {
                     color: $text-hover;
+                    font-weight: 600; //Fill màu background
+                    //Remove hover on tablet and mobile
+                    @media screen and (max-width: $br-medium) {
+                        color: inherit;
+                    }
                 }
             }
-
-            .song-more{
+            .song-more {
                 background: $more-bg;
                 position: absolute;
                 display: flex;
@@ -123,26 +128,20 @@
                 padding: 5px;
                 white-space: nowrap;
                 transition: all 250ms ease-in-out;
-
-                &.hidden{
+                &.hidden {
                     visibility: hidden;
                     opacity: 0;
                 }
-
-                &.show{ 
+                &.show {
                     visibility: visible;
                     opacity: 1;
                 }
-                
-
-                .more{
-
-                    &:not(:last-of-type){
+                .more {
+                    &:not(:last-of-type) {
                         margin-bottom: 5px;
                     }
-
                     //Icon
-                    i::before{
+                    i::before {
                         margin-right: 5px;
                     }
                 }

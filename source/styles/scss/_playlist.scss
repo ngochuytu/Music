@@ -110,10 +110,6 @@
                 &.active {
                     color: $text-hover;
                     font-weight: 600; //Fill màu background
-                    //Remove hover on tablet and mobile
-                    @media screen and (max-width: $br-medium) {
-                        color: inherit;
-                    }
                 }
             }
             .song-more {

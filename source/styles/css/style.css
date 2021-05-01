@@ -581,12 +581,6 @@ header .timer-form button:hover {
   font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
-  .playlist__song .song--right .favoriteButton.active {
-    color: inherit;
-  }
-}
-
 .playlist__song .song--right .song-more {
   background: #432275;
   position: absolute;

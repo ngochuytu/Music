@@ -31,7 +31,10 @@ const app = {
             }
             else if (this.favoritePlaylist) {
                 //Sắp xếp ID tăng dần
-                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                if (favoriteSongsID)
+                    favoriteSongsID = favoriteSongsID.split(",");
                 if (favoriteSongsID) {
                     while (true) {
                         let randomSongsIndex = Math.round(Math.random() * (favoriteSongsID.length - 1));
@@ -73,7 +76,10 @@ const app = {
             }
             else if (this.favoritePlaylist) {
                 //Sắp xếp ID tăng dần
-                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                if (favoriteSongsID)
+                    favoriteSongsID = favoriteSongsID.split(",").sort((a, b) => a - b);
                 const currentFavoriteIndex = favoriteSongsID.indexOf(this.currentSongID);
                 if (favoriteSongsID) {
                     if (this.currentSongID == favoriteSongsID[favoriteSongsID.length - 1])
@@ -103,7 +109,10 @@ const app = {
             }
             else if (this.favoritePlaylist) {
                 //Sắp xếp ID tăng dần
-                const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",")?.sort((a, b) => a - b);
+                let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                if (favoriteSongsID)
+                    favoriteSongsID = favoriteSongsID.split(",").sort((a, b) => a - b);
                 const currentFavoriteIndex = favoriteSongsID.indexOf(this.currentSongID);
                 if (favoriteSongsID) {
                     if (this.currentSongID == favoriteSongsID[0])
@@ -211,8 +220,10 @@ const app = {
 
             playlist: () => {
                 if (this.favoritePlaylist) {
-                    const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
-
+                    // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                    let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                    if (favoriteSongsID)
+                        favoriteSongsID = favoriteSongsID.split(",");
                     if (this.searchSongs) {
                         playlist = this.searchSongs.map(searchSong => {
                             if (searchSong === this.getCurrentSong()) {
@@ -605,17 +616,25 @@ const app = {
             }
 
             const stylingFavoriteButtons = () => {
-                const favoriteSongsIDArray = localStorage.getItem("favoriteSongsID")?.split(",");
-
+                // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                if (favoriteSongsID)
+                    favoriteSongsID = favoriteSongsID.split(",");
                 const favoriteButtons = document.querySelectorAll(".favoriteButton");
                 favoriteButtons.forEach(favoriteButton => {
                     favoriteButton.classList.remove("active");
 
                     const favoriteSongID = favoriteButton.parentElement.parentElement.id;
-                    favoriteSongsIDArray?.forEach(ID => {
-                        if (favoriteSongID == ID)
-                            favoriteButton.classList.add("active");
-                    });
+                    if (favoriteSongsID) {
+                        favoriteSongsID.forEach(ID => {
+                            if (favoriteSongID == ID)
+                                favoriteButton.classList.add("active");
+                        });
+                    }
+                    // favoriteSongsID?.forEach(ID => {
+                    //     if (favoriteSongID == ID)
+                    //         favoriteButton.classList.add("active");
+                    // });
                 });
             }
 
@@ -1003,7 +1022,10 @@ const app = {
                         this.searchSongs = null;
                     else {
                         if (this.favoritePlaylist) {
-                            const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                            // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
+                            let favoriteSongsID = localStorage.getItem("favoriteSongsID");
+                            if (favoriteSongsID)
+                                favoriteSongsID.split(",");
                             console.log(favoriteSongsID);
                             if (favoriteSongsID) {
                                 this.searchSongs = this.songs.filter(song => {

@@ -21,22 +21,22 @@
     },
     {
         "id": 2,
-        "name": "Suýt nữa thì",
-        "singer": "Andiez",
-        "source": "../../assets/songs/SuytNuaThi.mp3",
-        "duration": "04:46",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/SuytNuaThi_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/SuytNuaThi_Mobile.jpg",
+        "name": "Cô gái m52",
+        "singer": "HuyR ft. Tùng Viu",
+        "source": "../../assets/songs/CoGaiM52.mp3",
+        "duration": "03:31",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoGaiM52_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoGaiM52_Mobile.jpg",
         "updated": "03/04/2021"
     },
     {
         "id": 3,
-        "name": "Love Story",
-        "singer": "Tạ Anh Thắng",
-        "source": "../../assets/songs/LoveStory.mp3",
-        "duration": "04:13",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoveStory_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoveStory_Mobile.jpg",
+        "name": "Ánh nắng của anh",
+        "singer": "Đức Phúc",
+        "source": "../../assets/songs/AnhNangCuaAnh.mp3",
+        "duration": "04:24",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhNangCuaAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhNangCuaAnh_Mobile.jpg",
         "updated": "03/04/2021"
     },
     {
@@ -851,12 +851,12 @@
     },
     {
         "id": 85,
-        "name": "Ánh nắng của anh",
-        "singer": "Đức Phúc",
-        "source": "../../assets/songs/AnhNangCuaAnh.mp3",
-        "duration": "04:24",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhNangCuaAnh_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhNangCuaAnh_Mobile.jpg",
+        "name": "Love Story",
+        "singer": "Tạ Anh Thắng",
+        "source": "../../assets/songs/LoveStory.mp3",
+        "duration": "04:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoveStory_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoveStory_Mobile.jpg",
         "updated": "03/04/2021"
     },
     {
@@ -1251,12 +1251,12 @@
     },
     {
         "id": 125,
-        "name": "Cô gái m52",
-        "singer": "HuyR ft. Tùng Viu",
-        "source": "../../assets/songs/CoGaiM52.mp3",
-        "duration": "03:31",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoGaiM52_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoGaiM52_Mobile.jpg",
+        "name": "Suýt nữa thì",
+        "singer": "Andiez",
+        "source": "../../assets/songs/SuytNuaThi.mp3",
+        "duration": "04:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SuytNuaThi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SuytNuaThi_Mobile.jpg",
         "updated": "03/04/2021"
     },
     {
@@ -1388,5 +1388,45 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaYeu_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaYeu_Mobile.jpg",
         "updated": "14/03/2021"
+    },
+    {
+        "id": 139,
+        "name": "Lặng nhìn khoảng cách",
+        "singer": "3 chú bộ đội",
+        "source": "../../assets/songs/LangNhinKhoangCach.mp3",
+        "duration": "04:12",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LangNhinKhoangCach_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LangNhinKhoangCach_Mobile.jpg",
+        "updated": "17/05/2021"
+    },
+    {
+        "id": 140,
+        "name": "Tìm lại bầu trời",
+        "singer": "Tuấn Hưng",
+        "source": "../../assets/songs/TimLaiBauTroi.mp3",
+        "duration": "05:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TimLaiBauTroi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TimLaiBauTroi_Mobile.jpg",
+        "updated": "17/05/2021"
+    },
+    {
+        "id": 141,
+        "name": "Proud of you",
+        "singer": "Fiona Fung",
+        "source": "../../assets/songs/ProudOfYou.mp3",
+        "duration": "03:09",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ProudOfYou_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ProudOfYou_Mobile.jpg",
+        "updated": "17/05/2021"
+    },
+    {
+        "id": 142,
+        "name": "Soái ca",
+        "singer": "Bảo Uyên",
+        "source": "../../assets/songs/SoaiCa.mp3",
+        "duration": "04:42",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SoaiCa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SoaiCa_Mobile.jpg",
+        "updated": "17/05/2021"
     }
 ]

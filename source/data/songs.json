@@ -1438,5 +1438,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/NgayNgo_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/NgayNgo_Mobile.jpg",
         "updated": "18/05/2021"
+    },
+    {
+        "id": 144,
+        "name": "Đợi bao lâu không đáng sợ",
+        "singer": "Trang Thiên",
+        "source": "../../assets/songs/DoiBaoLauKhongDangSo.mp3",
+        "duration": "05:25",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DoiBaoLauKhongDangSo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DoiBaoLauKhongDangSo_Mobile.jpg",
+        "updated": "30/05/2021"
     }
 ]

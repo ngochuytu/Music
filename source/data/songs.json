@@ -1448,5 +1448,45 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/DoiBaoLauKhongDangSo_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/DoiBaoLauKhongDangSo_Mobile.jpg",
         "updated": "30/05/2021"
+    },
+    {
+        "id": 145,
+        "name": "Bèo dạt mây trôi",
+        "singer": "Hương Tú",
+        "source": "../../assets/songs/BeoDatMayTroi.mp3",
+        "duration": "03:28",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BeoDatMayTroi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BeoDatMayTroi_Mobile.jpg",
+        "updated": "05/06/2021"
+    },
+    {
+        "id": 146,
+        "name": "Giấc mơ trưa",
+        "singer": "Hương Tú",
+        "source": "../../assets/songs/GiacMoTrua.mp3",
+        "duration": "03:58",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/GiacMoTrua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/GiacMoTrua_Mobile.jpg",
+        "updated": "05/06/2021"
+    },
+    {
+        "id": 147,
+        "name": "Tháng 5 không trở lại",
+        "singer": "The Wall Nutszz",
+        "source": "../../assets/songs/Thang5KhongTroLai.mp3",
+        "duration": "04:20",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Thang5KhongTroLai_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Thang5KhongTroLai_Mobile.jpg",
+        "updated": "05/06/2021"
+    },
+    {
+        "id": 148,
+        "name": "Phố cũ còn anh",
+        "singer": "Quinn ft Chilly x Siin",
+        "source": "../../assets/songs/PhoCuConAnh.mp3",
+        "duration": "03:52",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/PhoCuConAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/PhoCuConAnh_Mobile.jpg",
+        "updated": "05/06/2021"
     }
 ]

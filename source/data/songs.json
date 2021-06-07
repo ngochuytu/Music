@@ -1488,5 +1488,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/PhoCuConAnh_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/PhoCuConAnh_Mobile.jpg",
         "updated": "05/06/2021"
+    },
+    {
+        "id": 149,
+        "name": "Because Of You",
+        "singer": "by2",
+        "source": "../../assets/songs/BecauseOfYou.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BecauseOfYou_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BecauseOfYou_Mobile.jpg",
+        "updated": "07/06/2021"
     }
 ]

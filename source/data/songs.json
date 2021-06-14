@@ -1498,5 +1498,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/BecauseOfYou_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/BecauseOfYou_Mobile.jpg",
         "updated": "07/06/2021"
+    },
+    {
+        "id": 150,
+        "name": "Em biết",
+        "singer": "Trịnh Đình Quang",
+        "source": "../../assets/songs/EmBiet.mp3",
+        "duration": "05:34",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmBiet_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmBiet_Mobile.jpg",
+        "updated": "15/06/2021"
     }
 ]

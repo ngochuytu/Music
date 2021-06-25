@@ -1518,5 +1518,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/TalkingToTheMoon_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/TalkingToTheMoon_Mobile.jpg",
         "updated": "19/06/2021"
+    },
+    {
+        "id": 152,
+        "name": "Hẹn yêu",
+        "singer": "Duy Zuno",
+        "source": "../../assets/songs/HenYeu.mp3",
+        "duration": "04:59",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HenYeu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HenYeu_Mobile.jpg",
+        "updated": "26/06/2021"
     }
 ]

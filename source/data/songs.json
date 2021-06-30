@@ -1528,5 +1528,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/HenYeu_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/HenYeu_Mobile.jpg",
         "updated": "26/06/2021"
+    },
+    {
+        "id": 153,
+        "name": "Kiss the rain",
+        "singer": "Yiruma",
+        "source": "../../assets/songs/KissTheRain.mp3",
+        "duration": "04:14",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KissTheRain_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KissTheRain_Mobile.jpg",
+        "updated": "01/07/2021"
     }
 ]

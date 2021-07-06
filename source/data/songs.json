@@ -1538,5 +1538,65 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/KissTheRain_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/KissTheRain_Mobile.jpg",
         "updated": "01/07/2021"
+    },
+    {
+        "id": 154,
+        "name": "Nơi em thuộc về",
+        "singer": "Bozitt, LilGee Phạm",
+        "source": "../../assets/songs/NoiEmThuocVeAnh.mp3",
+        "duration": "06:00",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NoiEmThuocVeAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NoiEmThuocVeAnh_Mobile.jpg",
+        "updated": "06/07/2021"
+    },
+    {
+        "id": 155,
+        "name": "Lạc",
+        "singer": "Hà Anh Tuấn, Oplus",
+        "source": "../../assets/songs/Lac.mp3",
+        "duration": "04:47",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Lac_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Lac_Mobile.jpg",
+        "updated": "06/07/2021"
+    },
+    {
+        "id": 156,
+        "name": "Yêu anh buồn lắm",
+        "singer": "Kim Ngân",
+        "source": "../../assets/songs/YeuAnhBuonLam.mp3",
+        "duration": "04:52",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuAnhBuonLam_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuAnhBuonLam_Mobile.jpg",
+        "updated": "06/07/2021"
+    },
+    {
+        "id": 157,
+        "name": "Chờ",
+        "singer": "Nguyễn Duy Anh, Ngọc Trâm",
+        "source": "../../assets/songs/Cho.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Cho_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Cho_Mobile.jpg",
+        "updated": "06/07/2021"
+    },
+    {
+        "id": 158,
+        "name": "Miền an nhiên",
+        "singer": "Phạm Minh Thành",
+        "source": "../../assets/songs/MienAnNhien.mp3",
+        "duration": "03:40",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MienAnNhien_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MienAnNhien_Mobile.jpg",
+        "updated": "06/07/2021"
+    },
+    {
+        "id": 159,
+        "name": "Hẹn Đông",
+        "singer": "Phạm Minh Thành",
+        "source": "../../assets/songs/HenDong.mp3",
+        "duration": "05:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HenDong_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HenDong_Mobile.jpg",
+        "updated": "06/07/2021"
     }
 ]

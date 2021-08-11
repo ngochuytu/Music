@@ -1628,5 +1628,35 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/Default_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/Default_Mobile.jpg",
         "updated": "27/07/2021"
+    },
+    {
+        "id": 163,
+        "name": "Mơ",
+        "singer": "Vũ Cát Tường",
+        "source": "../../assets/songs/Mo.mp3",
+        "duration": "04:34",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Mo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Mo_Mobile.jpg",
+        "updated": "11/08/2021"
+    },
+    {
+        "id": 164,
+        "name": "Thương em là điều anh không thể ngờ",
+        "singer": "Noo Phước Thịnh",
+        "source": "../../assets/songs/ThuongEmLaDieuAnhKhongTheNgo.mp3",
+        "duration": "05:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ThuongEmLaDieuAnhKhongTheNgo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ThuongEmLaDieuAnhKhongTheNgo_Mobile.jpg",
+        "updated": "11/08/2021"
+    },
+    {
+        "id": 165,
+        "name": "Cho Em Gần Anh thêm Chút Nữa",
+        "singer": "Hương Tràm",
+        "source": "../../assets/songs/ChoEmGanAnhThemChutNua.mp3",
+        "duration": "05:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoEmGanAnhThemChutNua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoEmGanAnhThemChutNua_Mobile.jpg",
+        "updated": "11/08/2021"
     }
 ]

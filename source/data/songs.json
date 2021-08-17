@@ -1651,12 +1651,72 @@
     },
     {
         "id": 165,
-        "name": "Cho Em Gần Anh thêm Chút Nữa",
+        "name": "Cho em gần anh thêm chút nữa",
         "singer": "Hương Tràm",
         "source": "../../assets/songs/ChoEmGanAnhThemChutNua.mp3",
         "duration": "05:08",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/ChoEmGanAnhThemChutNua_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/ChoEmGanAnhThemChutNua_Mobile.jpg",
         "updated": "11/08/2021"
+    },
+    {
+        "id": 166,
+        "name": "Em là hạnh phúc trong anh",
+        "singer": "Hồ Quang Hiếu",
+        "source": "../../assets/songs/EmLaHanhPhucTrongAnh.mp3",
+        "duration": "04:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/EmLaHanhPhucTrongAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/EmLaHanhPhucTrongAnh_Mobile.jpg",
+        "updated": "17/08/2021"
+    },
+    {
+        "id": 167,
+        "name": "Nơi ta chờ em",
+        "singer": "Will",
+        "source": "../../assets/songs/NoiTaChoEm.mp3",
+        "duration": "03:39",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NoiTaChoEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NoiTaChoEm_Mobile.jpg",
+        "updated": "17/08/2021"
+    },
+    {
+        "id": 168,
+        "name": "Ngày mai em đi",
+        "singer": "Touliver, Lê Hiếu,Soobin Hoàng Sơn",
+        "source": "../../assets/songs/NgayMaiEmDi.mp3",
+        "duration": "03:39",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NgayMaiEmDi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NgayMaiEmDi_Mobile.jpg",
+        "updated": "17/08/2021"
+    },
+    {
+        "id": 169,
+        "name": "Mùa thu đi qua",
+        "singer": "Rhymastic",
+        "source": "../../assets/songs/MuaThuDiQua.mp3",
+        "duration": "03:50",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaThuDiQua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaThuDiQua_Mobile.jpg",
+        "updated": "17/08/2021"
+    },
+    {
+        "id": 170,
+        "name": "Yêu một người thật khó",
+        "singer": "Thành ZB",
+        "source": "../../assets/songs/YeuMotNguoiThatKho.mp3",
+        "duration": "05:54",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuMotNguoiThatKho_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuMotNguoiThatKho_Mobile.jpg",
+        "updated": "17/08/2021"
+    },
+    {
+        "id": 171,
+        "name": "Sau chia tay ai cũng khác",
+        "singer": "T.R.I",
+        "source": "../../assets/songs/SauChiaTayAiCungKhac.mp3",
+        "duration": "04:43",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/SauChiaTayAiCungKhac_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/SauChiaTayAiCungKhac_Mobile.jpg",
+        "updated": "17/08/2021"
     }
 ]

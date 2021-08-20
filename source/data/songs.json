@@ -1718,5 +1718,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/SauChiaTayAiCungKhac_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/SauChiaTayAiCungKhac_Mobile.jpg",
         "updated": "17/08/2021"
+    },
+    {
+        "id": 172,
+        "name": "L.O.V.E",
+        "singer": "Nguyên, R-IN",
+        "source": "../../assets/songs/Love.mp3",
+        "duration": "03:09",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Love_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Love_Mobile.jpg",
+        "updated": "20/08/2021"
     }
 ]

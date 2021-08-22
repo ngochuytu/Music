@@ -1721,6 +1721,16 @@
     },
     {
         "id": 172,
+        "name": "Từ em mà ra",
+        "singer": "Lil ZPOET, Đức Anh",
+        "source": "../../assets/songs/TuEmMaRa.mp3",
+        "duration": "03:48",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TuEmMaRa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TuEmMaRa_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 173,
         "name": "L.O.V.E",
         "singer": "Nguyên, R-IN",
         "source": "../../assets/songs/Love.mp3",

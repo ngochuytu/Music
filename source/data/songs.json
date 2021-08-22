@@ -1738,5 +1738,65 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/Love_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/Love_Mobile.jpg",
         "updated": "20/08/2021"
+    },
+    {
+        "id": 174,
+        "name": "Đông kiếm em",
+        "singer": "Vũ",
+        "source": "../../assets/songs/DongKiemEm.mp3",
+        "duration": "04:06",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DongKiemEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DongKiemEm_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 175,
+        "name": "Đợi",
+        "singer": "Vũ",
+        "source": "../../assets/songs/Doi.mp3",
+        "duration": "05:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Doi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Doi_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 176,
+        "name": "Chuyện những người yêu xa",
+        "singer": "Vũ",
+        "source": "../../assets/songs/ChuyenCuaNhungNguoiYeuXa.mp3",
+        "duration": "05:37",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChuyenCuaNhungNguoiYeuXa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChuyenCuaNhungNguoiYeuXa_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 177,
+        "name": "Mùa mưa ngâu nằm cạnh",
+        "singer": "Vũ",
+        "source": "../../assets/songs/MuaMuaNgauNamCanh.mp3",
+        "duration": "04:33",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaMuaNgauNamCanh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaMuaNgauNamCanh_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 178,
+        "name": "Lời yêu em",
+        "singer": "Vũ",
+        "source": "../../assets/songs/LoiYeuEm.mp3",
+        "duration": "04:46",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoiYeuEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoiYeuEm_Mobile.jpg",
+        "updated": "22/08/2021"
+    },
+    {
+        "id": 179,
+        "name": "Bước qua mùa cô đơn",
+        "singer": "Vũ",
+        "source": "../../assets/songs/BuocQuaMuaCoDon.mp3",
+        "duration": "04:35",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BuocQuaMuaCoDon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BuocQuaMuaCoDon_Mobile.jpg",
+        "updated": "22/08/2021"
     }
 ]

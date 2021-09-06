@@ -1798,5 +1798,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/BuocQuaMuaCoDon_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/BuocQuaMuaCoDon_Mobile.jpg",
         "updated": "23/08/2021"
+    },
+    {
+        "id": 180,
+        "name": "Bước qua mùa cô đơn",
+        "singer": "Trịnh Thanh Vân",
+        "source": "../../assets/songs/AnhKhongNhoEm.mp3",
+        "duration": "04:06",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhKhongNhoEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhKhongNhoEm_Mobile.jpg",
+        "updated": "06/09/2021"
     }
 ]

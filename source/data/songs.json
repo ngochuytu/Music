@@ -1818,5 +1818,85 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/HoaSac_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/HoaSac_Mobile.jpg",
         "updated": "12/09/2021"
-    }
+    },
+    {
+        "id": 182,
+        "name": "Lý do anh xuất hiên",
+        "singer": "Tân Trần",
+        "source": "../../assets/songs/LyDoAnhXuatHien.mp3",
+        "duration": "03:17",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LyDoAnhXuatHien_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LyDoAnhXuatHien_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 183,
+        "name": "Cố Ấy Tốt Hơn",
+        "singer": "Hà Yumi",
+        "source": "../../assets/songs/CoAyTotHon.mp3",
+        "duration": "04:59",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoAyTotHon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoAyTotHon_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 184,
+        "name": "Bớt lo một ngày",
+        "singer": "Kelly",
+        "source": "../../assets/songs/BotLoMotNgay.mp3",
+        "duration": "03:44",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BotLoMotNgay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BotLoMotNgay_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 185,
+        "name": "Lời Yêu Ngày Đó",
+        "singer": "Hữu Long",
+        "source": "../../assets/songs/LoiYeuNgayDo.mp3",
+        "duration": "03:41",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoiYeuNgayDo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoiYeuNgayDo_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 186,
+        "name": "Nắng Chiều Hạ",
+        "singer": "Hà Huy Hoàng, Sơn Phạm",
+        "source": "../../assets/songs/NangChieuHa.mp3",
+        "duration": "05:38",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NangChieuHa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NangChieuHa_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 187,
+        "name": "Vườn mây",
+        "singer": "Madihu",
+        "source": "../../assets/songs/VuonMay.mp3",
+        "duration": "03:42",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/VuonMay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/VuonMay_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 188,
+        "name": "Đường 2 Chiều",
+        "singer": "Linh Hương",
+        "source": "../../assets/songs/Duong2Chieu.mp3",
+        "duration": "04:52",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Duong2Chieu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Duong2Chieu_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 189,
+        "name": "Anh Đã Lạc Vào",
+        "singer": "Green, Prod Truzg",
+        "source": "../../assets/songs/AnhDaLacVao.mp3",
+        "duration": "03:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AnhDaLacVao_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhDaLacVao_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
 ]

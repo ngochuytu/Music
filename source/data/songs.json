@@ -1899,4 +1899,44 @@
         "thumbnail_mobile": "../../assets/thumbnails/mobile/AnhDaLacVao_Mobile.jpg",
         "updated": "24/09/2021"
     },
+    {
+        "id": 190,
+        "name": "Đường Một Chiều",
+        "singer": "Huỳnh Tú",
+        "source": "../../assets/songs/DuongMotChieu.mp3",
+        "duration": "04:47",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuongMotChieu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuongMotChieu_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 191,
+        "name": "Lời Thì Thầm Của Gió",
+        "singer": "Cheng",
+        "source": "../../assets/songs/LoiThiThamCuaGio.mp3",
+        "duration": "04:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoiThiThamCuaGio_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoiThiThamCuaGio_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 192,
+        "name": "Nếu mai chia tay",
+        "singer": "MONSTAR (ft. AMEE)",
+        "source": "../../assets/songs/NeuMaiChiaTay.mp3",
+        "duration": "03:19",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NeuMaiChiaTay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NeuMaiChiaTay_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 193,
+        "name": "Là khi nào ấy nhờ",
+        "singer": "MACHIOT",
+        "source": "../../assets/songs/LaKhiNaoAyNho.mp3",
+        "duration": "03:20",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LaKhiNaoAyNho_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LaKhiNaoAyNho_Mobile.jpg",
+        "updated": "24/09/2021"
+    }
 ]

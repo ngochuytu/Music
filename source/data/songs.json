@@ -182,7 +182,7 @@
     {
         "id": 18,
         "name": "Không cần",
-        "singer": "the SHEEP",
+        "singer": "THE SHEEP",
         "source": "../../assets/songs/KhongCan.mp3",
         "duration": "03:45",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/KhongCan_Desktop.jpg",
@@ -1937,6 +1937,16 @@
         "duration": "03:20",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/LaKhiNaoAyNho_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/LaKhiNaoAyNho_Mobile.jpg",
+        "updated": "24/09/2021"
+    },
+    {
+        "id": 194,
+        "name": "Người Ta Thành Đôi Hết Rồi",
+        "singer": "THE SHEEP,T.R.I",
+        "source": "../../assets/songs/NguoiTaThanhDoiHetRoi.mp3",
+        "duration": "03:02",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NguoiTaThanhDoiHetRoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NguoiTaThanhDoiHetRoi_Mobile.jpg",
         "updated": "24/09/2021"
     }
 ]

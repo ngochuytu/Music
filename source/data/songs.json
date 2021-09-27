@@ -1941,12 +1941,72 @@
     },
     {
         "id": 194,
-        "name": "Người Ta Thành Đôi Hết Rồi",
-        "singer": "THE SHEEP,T.R.I",
+        "name": "Người ta thành đôi hết rồi",
+        "singer": "THE SHEEP, T.R.I",
         "source": "../../assets/songs/NguoiTaThanhDoiHetRoi.mp3",
         "duration": "03:02",
         "thumbnail_desktop": "../../assets/thumbnails/desktop/NguoiTaThanhDoiHetRoi_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/NguoiTaThanhDoiHetRoi_Mobile.jpg",
         "updated": "24/09/2021"
+    },
+    {
+        "id": 195,
+        "name": "Lời anh muốn nói",
+        "singer": "Star-T",
+        "source": "../../assets/songs/LoiAnhMuonNoi.mp3",
+        "duration": "03:55",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LoiAnhMuonNoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LoiAnhMuonNoi_Mobile.jpg",
+        "updated": "27/09/2021"
+    },
+    {
+        "id": 196,
+        "name": "Hanoi n U",
+        "singer": "Da Fame",
+        "source": "../../assets/songs/HanoiNU.mp3",
+        "duration": "03:45",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HanoiNU_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HanoiNU_Mobile.jpg",
+        "updated": "27/09/2021"
+    },
+    {
+        "id": 197,
+        "name": "Ai cho ai",
+        "singer": "FloD ft. M! (Giang Nguyen)",
+        "source": "../../assets/songs/AiChoAi.mp3",
+        "duration": "02:40",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/AiChoAi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/AiChoAi_Mobile.jpg",
+        "updated": "27/09/2021"
+    },
+    {
+        "id": 198,
+        "name": "I will be loving you",
+        "singer": "Chester See",
+        "source": "../../assets/songs/IWillBeLovingYou.mp3",
+        "duration": "04:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/IWillBeLovingYou_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/IWillBeLovingYou_Mobile.jpg",
+        "updated": "27/09/2021"
+    },
+    {
+        "id": 199,
+        "name": "Yêu từ đâu mà ra",
+        "singer": "Lil ZPOET",
+        "source": "../../assets/songs/YeuTuDauMaRa.mp3",
+        "duration": "04:03",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuTuDauMaRa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuTuDauMaRa_Mobile.jpg",
+        "updated": "27/09/2021"
+    },
+    {
+        "id": 200,
+        "name": "Mùa hạ cuối",
+        "singer": "Tố Như, Dee, Hare",
+        "source": "../../assets/songs/MuaHaCuoi.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaHaCuoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaHaCuoi_Mobile.jpg",
+        "updated": "27/09/2021"
     }
 ]

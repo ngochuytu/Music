@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id": 0,
         "name": "Little Do You Know",
@@ -2008,5 +2008,125 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaHaCuoi_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaHaCuoi_Mobile.jpg",
         "updated": "27/09/2021"
+    },
+    {
+        "id": 201,
+        "name": "Yêu Anh",
+        "singer": "Miu Lê",
+        "source": "../../assets/songs/YeuAnh.mp3",
+        "duration": "04:16",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuAnh_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuAnh_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 202,
+        "name": "Bay Giữa Ngân Hà",
+        "singer": "Nam Cường",
+        "source": "../../assets/songs/BayGiuaNganHa.mp3",
+        "duration": "03:25",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BayGiuaNganHa_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BayGiuaNganHa_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 203,
+        "name": "Bên trái",
+        "singer": "Kiên Trịnh",
+        "source": "../../assets/songs/BenTrai.mp3",
+        "duration": "04:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/BenTrai_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/BenTrai_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 204,
+        "name": "Tâm Sự Của Em",
+        "singer": "Trung Nghĩa, Văn, Jay D",
+        "source": "../../assets/songs/TamSuCuaEm.mp3",
+        "duration": "05:41",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TamSuCuaEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TamSuCuaEm_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 205,
+        "name": "Vầng trăng khóc",
+        "singer": "Hoàng Hải Dương, Đan Trang",
+        "source": "../../assets/songs/VangTrangKhoc.mp3",
+        "duration": "05:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/VangTrangKhoc_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/VangTrangKhoc_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 206,
+        "name": "Hạnh Phúc Đã Từng",
+        "singer": "Antar-Z",
+        "source": "../../assets/songs/HanhPhucDaTung.mp3",
+        "duration": "05:18",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HanhPhucDaTung_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HanhPhucDaTung_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 207,
+        "name": "Không Cần Phải Hứa Đâu Em",
+        "singer": "Quang Minh",
+        "source": "../../assets/songs/KhongCanPhaiHuaDauEm.mp3",
+        "duration": "06:08",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KhongCanPhaiHuaDauEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KhongCanPhaiHuaDauEm_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 208,
+        "name": "Nắng",
+        "singer": "Anh Khoa, Văn, Bnos",
+        "source": "../../assets/songs/Nang.mp3",
+        "duration": "04:44",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Nang_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Nang_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 209,
+        "name": "Yêu",
+        "singer": "Dương Minh Châu",
+        "source": "../../assets/songs/Yeu.mp3",
+        "duration": "05:03",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Yeu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Yeu_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 210,
+        "name": "Tự Tình",
+        "singer": "Lâm Nguyên, Cọ",
+        "source": "../../assets/songs/TuTinh_1.mp3",
+        "duration": "04:36",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TuTinh_1_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TuTinh_1_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 211,
+        "name": "Tự Tình",
+        "singer": "Quang Huy, Minh Triều",
+        "source": "../../assets/songs/TuTinh_2.mp3",
+        "duration": "05:20",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/TuTinh_2_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/TuTinh_2_Mobile.jpg",
+        "updated": "02/11/2021"
+    },
+    {
+        "id": 212,
+        "name": "Mộng mơ",
+        "singer": "Sun DA",
+        "source": "../../assets/songs/MongMo.mp3",
+        "duration": "04:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MongMo_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MongMo_Mobile.jpg",
+        "updated": "02/11/2021"
     }
 ]

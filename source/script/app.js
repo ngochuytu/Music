@@ -254,7 +254,7 @@ const app = {
                                             </div>
                                         </div>
                                     </div>
-                                `
+                                `;
                             }
                             else {
                                 return `
@@ -284,7 +284,7 @@ const app = {
                                             </div>
                                         </div>
                                     </div>
-                                `
+                                `;
                             }
                         });
                     }
@@ -320,7 +320,7 @@ const app = {
                                                     </div>
                                                 </div>
                                             </div>
-                                        `
+                                        `;
                                     }
                                     else {
                                         return `
@@ -350,7 +350,7 @@ const app = {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            `
+                                            `;
                                     }
                                 }
                             }
@@ -388,7 +388,7 @@ const app = {
                                             </div>
                                         </div>
                                     </div>
-                                `
+                                `;
                             }
                             else {
                                 return `
@@ -418,7 +418,7 @@ const app = {
                                             </div>
                                         </div>
                                     </div>
-                                `
+                                `;
                             }
                         });
                     }
@@ -452,7 +452,7 @@ const app = {
                                                 </div>
                                             </div>
                                         </div>
-                                    `
+                                    `;
                             }
                             else {
                                 return `
@@ -482,7 +482,7 @@ const app = {
                                                 </div>
                                             </div>
                                         </div>
-                                    `
+                                    `;
                             }
                         });
                     }
@@ -524,7 +524,7 @@ const app = {
                     </div>
                 </footer>
             `
-        }
+        };
 
         const renderAll = () => {
             document.title = `${sections.title}`;
@@ -542,8 +542,8 @@ const app = {
         const renderPlaylist = () => {
             document.getElementById("playlist").innerHTML = `
                 <div class="playlist" id="playlist">${sections.playlist()}</div>
-            `
-        }
+            `;
+        };
 
         const stylingHandler = () => {
             const stylingHeaderMenu = e => {
@@ -558,7 +558,7 @@ const app = {
                         menuWrapper.classList.remove("closed");
                     }
                 }
-            }
+            };
 
             const stylingRepeatAndRandomButton = () => {
                 const repeatButton = document.getElementById("repeatButton");
@@ -572,7 +572,7 @@ const app = {
                     randomButton.classList.add("active");
                 else
                     randomButton.classList.remove("active");
-            }
+            };
 
             const togglingPlayButton = () => {
                 const playButton = document.getElementById("playButton");
@@ -592,7 +592,7 @@ const app = {
                     pauseButton.classList.remove("show");
                     pauseButton.classList.add("hidden");
                 }
-            }
+            };
             const animatingSongCDs = () => {
                 const songCDs = document.querySelectorAll(".song-cd");
                 songCDs.forEach(songCD => {
@@ -601,7 +601,7 @@ const app = {
                     else
                         songCD.classList.remove("spinning");
                 });
-            }
+            };
 
             const stylingTimer = () => {
                 const timerHandler = document.getElementById("timerHandler");
@@ -613,7 +613,7 @@ const app = {
                     timerHandler.classList.remove("active");
                     timerHandler.innerHTML = "";
                 }
-            }
+            };
 
             const stylingFavoriteButtons = () => {
                 // const favoriteSongsID = localStorage.getItem("favoriteSongsID")?.split(",");
@@ -636,7 +636,7 @@ const app = {
                     //         favoriteButton.classList.add("active");
                     // });
                 });
-            }
+            };
 
             stylingRepeatAndRandomButton();
             togglingPlayButton();
@@ -649,7 +649,7 @@ const app = {
                 stylingHeaderMenu: stylingHeaderMenu,
 
             };
-        }
+        };
 
         const eventHandler = () => {
             const headerMenuClick = () => {
@@ -657,7 +657,7 @@ const app = {
                 menuWrapper.addEventListener("click", e => {
                     stylingHandler().stylingHeaderMenu(e);
                 });
-            }
+            };
 
             const headerMenuContentsClick = () => {
                 const afterClick = (e) => {
@@ -677,7 +677,7 @@ const app = {
                     playlistMoreButtonClick();
                     songClick();
                     favoriteButtonClick();
-                }
+                };
 
                 const normalPlaylistClick = () => {
                     const normalPlaylist = document.getElementById("normalPlaylist");
@@ -685,7 +685,7 @@ const app = {
                         this.favoritePlaylist = false;
                         afterClick(e);
                     });
-                }
+                };
 
                 const favoritePlaylistClick = () => {
                     const favoritePlaylist = document.getElementById("favoritePlaylist");
@@ -693,11 +693,11 @@ const app = {
                         this.favoritePlaylist = true;
                         afterClick(e);
                     });
-                }
+                };
 
                 normalPlaylistClick();
                 favoritePlaylistClick();
-            }
+            };
 
             const favoriteButtonClick = () => {
                 const favoriteButtons = document.querySelectorAll(".favoriteButton");
@@ -724,7 +724,7 @@ const app = {
                         stylingHandler();
                     });
                 });
-            }
+            };
 
             const playlistMoreButtonClick = () => {
                 const moreButtons = document.querySelectorAll(".moreButton");
@@ -777,7 +777,7 @@ const app = {
 
                     nextButtonClick();
                     previousButtonClick();
-                }
+                };
 
                 const repeatAndRandomButtonClick = () => {
                     const repeatButtonClick = () => {
@@ -794,7 +794,7 @@ const app = {
 
                             stylingHandler();
                         });
-                    }
+                    };
                     const randomButtonClick = () => {
                         const randomButton = document.getElementById("randomButton");
                         randomButton.addEventListener("click", () => {
@@ -810,11 +810,11 @@ const app = {
 
                             stylingHandler();
                         });
-                    }
+                    };
 
                     repeatButtonClick();
                     randomButtonClick();
-                }
+                };
 
                 const playAndPauseButtonClick = () => {
                     const playButton = document.getElementById("playButton");
@@ -826,7 +826,7 @@ const app = {
                             this.playAndStopSong();
                             stylingHandler();
                         });
-                    }
+                    };
 
                     const pauseButtonClick = () => {
                         pauseButton.addEventListener("click", () => {
@@ -834,16 +834,16 @@ const app = {
                             this.playAndStopSong();
                             stylingHandler();
                         });
-                    }
+                    };
 
                     playButtonClick();
                     pauseButtonClick();
-                }
+                };
 
                 nextAndPreviousButtonClick();
                 repeatAndRandomButtonClick();
                 playAndPauseButtonClick();
-            }
+            };
 
             const songEnd = () => {
                 audioHandler.addEventListener("ended", () => {
@@ -863,7 +863,7 @@ const app = {
                         stylingHandler();
                     }
                 });
-            }
+            };
 
             //Update thanh trượt + thời gian bài hát
             const updateAudioSliderAndCurrentTime = () => {
@@ -879,8 +879,8 @@ const app = {
                     } else {
                         displayCurrentTime.innerHTML = `0${minutes}:0${seconds}`;
                     }
-                })
-            }
+                });
+            };
 
             const setAndUpdateAudioVolume = () => {
                 const volumeSlider = document.getElementById("volumeSlider");
@@ -889,17 +889,17 @@ const app = {
                 const setAudioVolume = () => {
                     audioHandler.volume = this.volume;
                     volumeSlider.value = this.volume;
-                }
+                };
 
                 const updateAudioVolume = () => {
                     volumeSlider.addEventListener("input", () => {
                         this.volume = volumeSlider.value; //audio.volume [0,1]
                         setAudioVolume();
                     });
-                }
+                };
                 setAudioVolume();
                 updateAudioVolume();
-            }
+            };
 
             const songClick = () => {
                 const songsList = document.querySelectorAll(".playlist__song");
@@ -917,7 +917,7 @@ const app = {
 
                     });
                 });
-            }
+            };
 
             const setSongCurrentTime = () => {
                 const audioSlider = document.getElementById("audioSlider");
@@ -925,7 +925,7 @@ const app = {
                 audioSlider.addEventListener("input", () => {
                     audioHandler.currentTime = audioSlider.value;
                 });
-            }
+            };
 
             const setTimer = () => {
                 let previousIntervalID = 0; //Để clearInterval cũ nếu có
@@ -949,11 +949,11 @@ const app = {
                                 this.playAndStopSong();
                                 stylingHandler(); //Update styling sau khi dừng
                             }
-                        }
+                        };
                         const countDownSetIntervalHandler = setInterval(countDown, 1000 * 60);
 
                         previousIntervalID = countDownSetIntervalHandler;
-                    }
+                    };
 
                     const timeValidation = (time, timerInput) => {
                         if (isNaN(time) == true || time == "" || time <= 0 || time >= 1000) {
@@ -966,13 +966,13 @@ const app = {
                             stylingHandler(); //Add css cho timer
                             timerCountDown(); //Đếm ngược
                         }
-                    }
+                    };
 
                     timerButton.addEventListener("click", () => {
                         const timerInput = document.getElementById("timerInput");
                         timeValidation(Math.round(timerInput.value), timerInput);
                     });
-                }
+                };
 
 
                 const openAndCloseTimerForm = () => {
@@ -1009,10 +1009,10 @@ const app = {
                             searchSongs();
                         }
                     });
-                }
+                };
 
                 openAndCloseTimerForm();
-            }
+            };
 
             const searchSongs = () => {
                 const searchInput = document.getElementById("searchInput");
@@ -1055,7 +1055,7 @@ const app = {
                     favoriteButtonClick();
 
                 });
-            }
+            };
 
             headerMenuClick();
             headerMenuContentsClick();
@@ -1075,7 +1075,7 @@ const app = {
         stylingHandler();
         eventHandler();
     }
-}
+};
 
 const data = "../data/songs.json";
 

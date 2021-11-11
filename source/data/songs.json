@@ -1,13 +1,13 @@
 ﻿[
     {
         "id": 0,
-        "name": "Little Do You Know",
-        "singer": "Alex & Sierra",
-        "source": "../../assets/songs/LittleDoYouKnow.mp3",
-        "duration": "03:05",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/LittleDoYouKnow_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/LittleDoYouKnow_Mobile.jpg",
-        "updated": "09/05/2021"
+        "name": "Mùa yêu",
+        "singer": "The Wall Nutszz",
+        "source": "../../assets/songs/MuaYeu.mp3",
+        "duration": "04:38",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaYeu_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaYeu_Mobile.jpg",
+        "updated": "14/03/2021"
     },
     {
         "id": 1,
@@ -1381,13 +1381,13 @@
     },
     {
         "id": 138,
-        "name": "Mùa yêu",
-        "singer": "The Wall Nutszz",
-        "source": "../../assets/songs/MuaYeu.mp3",
-        "duration": "04:38",
-        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaYeu_Desktop.jpg",
-        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaYeu_Mobile.jpg",
-        "updated": "14/03/2021"
+        "name": "Little Do You Know",
+        "singer": "Alex & Sierra",
+        "source": "../../assets/songs/LittleDoYouKnow.mp3",
+        "duration": "03:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LittleDoYouKnow_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LittleDoYouKnow_Mobile.jpg",
+        "updated": "09/05/2021"
     },
     {
         "id": 139,
@@ -2128,5 +2128,45 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/MongMo_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/MongMo_Mobile.jpg",
         "updated": "02/11/2021"
+    },
+    {
+        "id": 213,
+        "name": "Mùa Hạ Năm Ấy",
+        "singer": "Linh",
+        "source": "../../assets/songs/MuaHaNamAy.mp3",
+        "duration": "04:37",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaHaNamAy_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaHaNamAy_Mobile.jpg",
+        "updated": "11/11/2021"
+    },
+    {
+        "id": 214,
+        "name": "Ngàn Nỗi Nhớ",
+        "singer": "SOUTHALID",
+        "source": "../../assets/songs/NganNoiNho.mp3",
+        "duration": "03:59",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NganNoiNho_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NganNoiNho_Mobile.jpg",
+        "updated": "11/11/2021"
+    },
+    {
+        "id": 215,
+        "name": "Người Điên 2 Thế Giới",
+        "singer": "Soullife, Fairy",
+        "source": "../../assets/songs/NguoiDien2TheGioi.mp3",
+        "duration": "03:13",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NguoiDien2TheGioi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NguoiDien2TheGioi_Mobile.jpg",
+        "updated": "11/11/2021"
+    },
+    {
+        "id": 216,
+        "name": "Có khi",
+        "singer": "Nguyễn Tuấn Phong",
+        "source": "../../assets/songs/CoKhi.mp3",
+        "duration": "04:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoKhi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoKhi_Mobile.jpg",
+        "updated": "11/11/2021"
     }
 ]

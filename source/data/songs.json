@@ -2168,5 +2168,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/CoKhi_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/CoKhi_Mobile.jpg",
         "updated": "11/11/2021"
+    },
+    {
+        "id": 217,
+        "name": "Dấu mưa",
+        "singer": "Trung Quân Idol",
+        "source": "../../assets/songs/DauMua.mp3",
+        "duration": "04:21",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DauMua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DauMua_Mobile.jpg",
+        "updated": "13/11/2021"
     }
 ]

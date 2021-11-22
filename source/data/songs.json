@@ -2208,5 +2208,25 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/ToiVaEm_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/ToiVaEm_Mobile.jpg",
         "updated": "22/11/2021"
+    },
+    {
+        "id": 221,
+        "name": "Sugar",
+        "singer": "Maroon 5",
+        "source": "../../assets/songs/Sugar.mp3",
+        "duration": "03:53",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Sugar_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Sugar_Mobile.jpg",
+        "updated": "22/11/2021"
+    },
+    {
+        "id": 222,
+        "name": "Lost stars",
+        "singer": "Adam Levine",
+        "source": "../../assets/songs/LostStars.mp3",
+        "duration": "04:26",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/LostStars_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/LostStars_Mobile.jpg",
+        "updated": "22/11/2021"
     }
 ]

@@ -2228,5 +2228,155 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/LostStars_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/LostStars_Mobile.jpg",
         "updated": "22/11/2021"
+    },
+    {
+        "id": 223,
+        "name": "3 1 0 7 - 2",
+        "singer": "Dươngg, Nâu, W/N",
+        "source": "../../assets/songs/3107-2.mp3",
+        "duration": "04:27",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/3107_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/3107_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 224,
+        "name": "3 1 0 7 - 3",
+        "singer": "Dươngg, Nâu, Titie",
+        "source": "../../assets/songs/3107-3.mp3",
+        "duration": "03:55",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/3107_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/3107_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 225,
+        "name": "Chúng Ta Sau Này",
+        "singer": "T.R.I",
+        "source": "../../assets/songs/ChungTaSauNay.mp3",
+        "duration": "03:35",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/ChungTaSauNay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/ChungTaSauNay_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 226,
+        "name": "Dù Cho Mai Về Sau",
+        "singer": "buitruonglin",
+        "source": "../../assets/songs/DuChoMaiVeSau.mp3",
+        "duration": "03:34",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DuChoMaiVeSau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DuChoMaiVeSau_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 227,
+        "name": "Không Yêu Cũng Chẳng Cô Đơn",
+        "singer": "Vũ Thịnh",
+        "source": "../../assets/songs/KhongYeuCungChangCoDon.mp3",
+        "duration": "04:51",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KhongYeuCungChangCoDon_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KhongYeuCungChangCoDon_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 228,
+        "name": "Mưa Ơi Đừng Buồn Thế",
+        "singer": "Phạm Nguyên Ngọc",
+        "source": "../../assets/songs/MuaOiDungBuonThe.mp3",
+        "duration": "04:00",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MuaOiDungBuonThe_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MuaOiDungBuonThe_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 229,
+        "name": "Cô Ấy Nói",
+        "singer": "Ngô Anh Đạt",
+        "source": "../../assets/songs/CoAyNoi.mp3",
+        "duration": "05:02",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/CoAyNoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/CoAyNoi_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 230,
+        "name": "Kẻ Theo Đuổi Ánh Sáng",
+        "singer": "Huy Vạc, Tiến Nguyễn",
+        "source": "../../assets/songs/KeDuoiTheoAnhSang.mp3",
+        "duration": "03:36",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/KeDuoiTheoAnhSang_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/KeDuoiTheoAnhSang_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 231,
+        "name": "Đợi Một Lời Chia Tay",
+        "singer": "Trịnh Thiên Ân, Lê Hữu Minh",
+        "source": "../../assets/songs/DoiMotLoiChiaTay.mp3",
+        "duration": "05:05",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DoiMotLoiChiaTay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DoiMotLoiChiaTay_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 232,
+        "name": "Mình Anh Nơi Này",
+        "singer": "NIT, Sing",
+        "source": "../../assets/songs/MinhAnhNoiNay.mp3",
+        "duration": "05:16",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/MinhAnhNoiNay_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/MinhAnhNoiNay_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 233,
+        "name": "Đừng chờ anh nữa",
+        "singer": "Tăng Phúc",
+        "source": "../../assets/songs/DungChoAnhNua.mp3",
+        "duration": "03:30",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DungChoAnhNua_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DungChoAnhNua_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 234,
+        "name": "Đành Vậy Thôi",
+        "singer": "Reddy",
+        "source": "../../assets/songs/DanhVayThoi.mp3",
+        "duration": "04:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/DanhVayThoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/DanhVayThoi_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 235,
+        "name": "Ôm Em Lần Cuối",
+        "singer": "NIT, Sing",
+        "source": "../../assets/songs/OmEmLanCuoi.mp3",
+        "duration": "04:04",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/OmEmLanCuoi_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/OmEmLanCuoi_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 236,
+        "name": "Hoa Nở Không Màu",
+        "singer": "Hoài Lâm",
+        "source": "../../assets/songs/HoaNoKhongMau.mp3",
+        "duration": "05:23",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/HoaNoKhongMau_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/HoaNoKhongMau_Mobile.jpg",
+        "updated": "20/12/2021"
+    },
+    {
+        "id": 237,
+        "name": "Nơi Đây Anh Chờ Em",
+        "singer": "Bozitt, LilGee Phạm",
+        "source": "../../assets/songs/NoiDayAnhChoEm.mp3",
+        "duration": "06:01",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/NoiDayAnhChoEm_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/NoiDayAnhChoEm_Mobile.jpg",
+        "updated": "20/12/2021"
     }
 ]

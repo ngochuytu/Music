@@ -2398,5 +2398,15 @@
         "thumbnail_desktop": "../../assets/thumbnails/desktop/YeuNhuNgayHomQua_Desktop.jpg",
         "thumbnail_mobile": "../../assets/thumbnails/mobile/YeuNhuNgayHomQua_Mobile.jpg",
         "updated": "08/01/2022"
+    },
+    {
+        "id": 240,
+        "name": "Drawer",
+        "singer": "10cm",
+        "source": "../../assets/songs/Drawer.mp3",
+        "duration": "03:57",
+        "thumbnail_desktop": "../../assets/thumbnails/desktop/Drawer_Desktop.jpg",
+        "thumbnail_mobile": "../../assets/thumbnails/mobile/Drawer_Mobile.jpg",
+        "updated": "23/02/2022"
     }
 ]
